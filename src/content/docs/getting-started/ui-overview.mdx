@@ -1,0 +1,82 @@
+---
+title: UI Overview
+description: Learn the name and purpose of each part of the Bokuchi interface.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+This page explains each part of the Bokuchi window so you know where everything is.
+
+{/* TODO: Add annotated screenshot */}
+
+## Main Areas
+
+### Tab Bar
+
+The tab bar sits at the top of the window. Each open file appears as a tab. You can:
+
+- Click a tab to switch to that file
+- Drag tabs to reorder them
+- Right-click a tab for more options (close, close others, etc.)
+- A dot or badge on a tab means the file has unsaved changes
+
+### Editor (Left Panel)
+
+This is where you type your Markdown text. It features:
+
+- Syntax highlighting for Markdown
+- Line numbers (can be toggled on/off)
+- Word wrap (configurable)
+- Minimap (optional)
+
+### Preview (Right Panel)
+
+This panel shows the rendered result of your Markdown in real time. Features include:
+
+- Synchronized scrolling with the editor
+- Clickable checkboxes (for task lists)
+- Syntax-highlighted code blocks (190+ languages)
+- Clickable links
+
+### Markdown Toolbar
+
+Located between the tab bar and the editor, the toolbar provides buttons for common formatting: headings, bold, italic, lists, links, images, code blocks, tables, and more. You don't need to memorize Markdown syntax — just select text and click a button.
+
+### Status Bar
+
+At the bottom of the window, the status bar shows:
+
+- Current line and column number
+- Character count
+- Current zoom level (click to adjust)
+- Current theme (click to switch)
+
+### Folder Tree (Left Side Panel)
+
+An optional panel that shows files in a folder. Open it with **Ctrl+Shift+E** or from the menu. You can click any file to open it in a new tab.
+
+### Outline Panel (Right Side Panel)
+
+An optional panel that shows the heading structure of your current document. Open it with **Ctrl+Shift+O**. Click any heading to jump to that position in the editor.
+
+## View Modes
+
+Bokuchi offers three view modes:
+
+| Mode | Description | Shortcut |
+|------|-------------|----------|
+| **Split View** | Editor and preview side by side | Ctrl+Shift+1 |
+| **Editor Only** | Full-width editor, no preview | Ctrl+Shift+2 |
+| **Preview Only** | Full-width preview, no editor | Ctrl+Shift+3 |
+
+You can also cycle through these modes with **Ctrl+Shift+V**.
+
+<Aside>
+The split view is the default and recommended mode for most users — you can write and see the result at the same time.
+</Aside>
+
+## Next Steps
+
+- [Markdown basics](/guides/markdown-basics/) — Learn the formatting syntax
+- [Markdown toolbar](/guides/markdown-toolbar/) — Use buttons instead of typing syntax
+- [Keyboard shortcuts](/reference/keyboard-shortcuts/) — Speed up your workflow

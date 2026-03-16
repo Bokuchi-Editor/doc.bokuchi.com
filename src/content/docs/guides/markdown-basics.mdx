@@ -1,0 +1,150 @@
+---
+title: Markdown Basics
+description: Learn the essential Markdown syntax you can use in Bokuchi.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Markdown is a simple way to format text using special characters. This page covers all the basics you need to know.
+
+<Aside>
+You don't need to memorize all of this at once. Bokuchi's [Markdown toolbar](/guides/markdown-toolbar/) lets you apply formatting with buttons — no typing required.
+</Aside>
+
+## Headings
+
+Headings create section titles. Use `#` symbols at the beginning of a line.
+
+| Markdown | Result |
+|----------|--------|
+| `# Heading 1` | Largest heading |
+| `## Heading 2` | Second-level heading |
+| `### Heading 3` | Third-level heading |
+| `#### Heading 4` | Fourth-level heading |
+| `##### Heading 5` | Fifth-level heading |
+| `###### Heading 6` | Smallest heading |
+
+**When to use:** Use headings to organize your document into sections. The [outline panel](/guides/outline/) will display your heading structure for easy navigation.
+
+## Bold, Italic, and Strikethrough
+
+| Markdown | Result | Use case |
+|----------|--------|----------|
+| `**bold text**` | **bold text** | Emphasize important words |
+| `*italic text*` | *italic text* | Titles, terms, subtle emphasis |
+| `~~strikethrough~~` | ~~strikethrough~~ | Show deleted or outdated text |
+| `***bold and italic***` | ***bold and italic*** | Strong emphasis |
+
+## Lists
+
+### Bullet Lists
+
+Use `-`, `*`, or `+` at the beginning of each line:
+
+```markdown
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
+```
+
+### Numbered Lists
+
+Use numbers followed by a period:
+
+```markdown
+1. First step
+2. Second step
+3. Third step
+```
+
+### Checkboxes (Task Lists)
+
+Use `- [ ]` for unchecked and `- [x]` for checked items:
+
+```markdown
+- [x] Completed task
+- [ ] Pending task
+- [ ] Another task
+```
+
+<Aside>
+In Bokuchi's preview, you can click checkboxes to toggle them on and off — the editor text updates automatically.
+</Aside>
+
+## Links and Images
+
+### Links
+
+```markdown
+[Link text](https://example.com)
+```
+
+### Images
+
+```markdown
+![Alt text](path/to/image.png)
+```
+
+You can use relative paths for local images or URLs for online images.
+
+## Blockquotes
+
+Use `>` at the beginning of a line to create a quote:
+
+```markdown
+> This is a blockquote.
+> It can span multiple lines.
+```
+
+**When to use:** Highlight important information, quote sources, or add notes.
+
+## Code
+
+### Inline Code
+
+Wrap text in backticks for inline code: `` `code here` ``
+
+### Code Blocks
+
+Use triple backticks for multi-line code. Specify a language for syntax highlighting:
+
+````markdown
+```javascript
+function hello() {
+  console.log("Hello, world!");
+}
+```
+````
+
+Bokuchi supports syntax highlighting for over 190 programming languages.
+
+## Tables
+
+Use pipes `|` and dashes `-` to create tables:
+
+```markdown
+| Name    | Role     | Status  |
+|---------|----------|---------|
+| Alice   | Designer | Active  |
+| Bob     | Engineer | Active  |
+```
+
+<Aside>
+You can also paste HTML tables or CSV/TSV data into Bokuchi and they will be automatically converted to Markdown tables. See [Table Conversion](/guides/table-conversion/) for details.
+</Aside>
+
+## Horizontal Rules
+
+Create a divider line with three or more dashes:
+
+```markdown
+---
+```
+
+## Next Steps
+
+- [Markdown toolbar](/guides/markdown-toolbar/) — Apply formatting using buttons
+- [Markdown cheatsheet](/reference/markdown-cheatsheet/) — Quick reference card
+- [Editor and preview](/guides/editor-and-preview/) — Learn about the editing experience

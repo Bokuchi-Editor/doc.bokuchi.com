@@ -1,0 +1,68 @@
+---
+title: Installation
+description: How to install Bokuchi on Windows, macOS, and Linux.
+---
+
+import { Tabs, TabItem, Steps, Aside } from '@astrojs/starlight/components';
+
+Bokuchi is available for Windows, macOS, and Linux. Download the latest version from the [GitHub Releases page](https://github.com/Bokuchi-Editor/bokuchi/releases/latest).
+
+## Download
+
+Visit the [Releases page](https://github.com/Bokuchi-Editor/bokuchi/releases/latest) and download the installer for your operating system.
+
+<Tabs>
+  <TabItem label="Windows">
+    - **`.exe`** — Standard installer (recommended)
+    - **`.msi`** — MSI installer
+
+    Run the downloaded installer and follow the on-screen instructions.
+  </TabItem>
+  <TabItem label="macOS">
+    - **`.dmg`** — Disk image (Universal, works on both Intel and Apple Silicon)
+
+    1. Open the `.dmg` file
+    2. Drag **Bokuchi** to the **Applications** folder
+    3. Open Bokuchi from your Applications folder
+  </TabItem>
+  <TabItem label="Linux">
+    - **`.deb`** — Debian/Ubuntu package
+    - **`.AppImage`** — Portable, runs on most distributions
+
+    For `.deb`:
+    ```bash
+    sudo dpkg -i bokuchi_*.deb
+    ```
+
+    For `.AppImage`:
+    ```bash
+    chmod +x Bokuchi_*.AppImage
+    ./Bokuchi_*.AppImage
+    ```
+  </TabItem>
+</Tabs>
+
+## Windows: SmartScreen Warning
+
+When you run the Bokuchi installer on Windows, you may see a **Microsoft Defender SmartScreen** warning saying "Windows protected your PC" or "Unknown publisher."
+
+<Steps>
+1. On the SmartScreen dialog, click **More info**
+2. Click the **Run anyway** button that appears
+3. The installer will proceed normally
+</Steps>
+
+<Aside>
+This warning appears because Bokuchi is not signed with a commercial code-signing certificate. The app is open source and safe to use. The warning will only appear on the first installation.
+</Aside>
+
+## After Installation
+
+When you launch Bokuchi for the first time, you will see the editor with an empty document ready for you to start writing.
+
+The interface language will match your system language if it is one of the [14 supported languages](/reference/supported-languages/). You can change it at any time in [Settings](/guides/settings/).
+
+## Next Steps
+
+- [Create your first document](/getting-started/first-document/) — A step-by-step walkthrough
+- [Learn the interface](/getting-started/ui-overview/) — Understand each part of the screen

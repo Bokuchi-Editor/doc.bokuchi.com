@@ -1,0 +1,56 @@
+---
+title: Table Conversion
+description: Automatically convert HTML tables, CSV, and TSV data into Markdown tables.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Bokuchi can automatically convert table data from other formats into Markdown table syntax when you paste it.
+
+## What Gets Converted
+
+- **HTML tables** — Copy a table from a web page or spreadsheet and paste it into Bokuchi
+- **TSV data** — Tab-separated values (e.g., from Excel or Google Sheets)
+- **CSV data** — Comma-separated values
+
+## Conversion Modes
+
+You can choose how Bokuchi handles table data on paste:
+
+| Mode | Behavior |
+|------|----------|
+| **Auto** | Converts automatically without asking |
+| **Confirm** (default) | Shows a preview dialog so you can review before converting |
+| **Off** | Pastes as plain text, no conversion |
+
+Change the mode in [Settings](/guides/settings/) > Advanced > Table Conversion.
+
+## Bypassing Conversion
+
+If you want to paste table data as plain text without conversion (regardless of the mode setting), use:
+
+- **macOS:** Shift+Cmd+V
+- **Windows/Linux:** Shift+Ctrl+V
+
+## Example
+
+Pasting this HTML:
+```html
+<table><tr><th>Name</th><th>Age</th></tr><tr><td>Alice</td><td>30</td></tr></table>
+```
+
+Results in this Markdown:
+```markdown
+| Name | Age |
+| --- | --- |
+| Alice | 30 |
+```
+
+<Aside>
+The confirm mode is recommended — it shows you a preview of the converted table so you can verify it looks correct before inserting it.
+</Aside>
+
+## Next Steps
+
+- [Markdown basics — Tables](/guides/markdown-basics/#tables) — Learn how to write Markdown tables manually
+- [Settings](/guides/settings/) — Configure the conversion mode

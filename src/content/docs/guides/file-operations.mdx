@@ -1,0 +1,70 @@
+---
+title: File Operations
+description: How to create, open, save, and manage files in Bokuchi.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Bokuchi provides all the file operations you need for working with Markdown documents.
+
+## Creating a New File
+
+Press **Cmd+N** (macOS) or **Ctrl+N** (Windows/Linux) to create a new empty document. It opens in a new tab.
+
+## Opening Files
+
+There are several ways to open files:
+
+- **Keyboard shortcut:** Press **Cmd+O** (macOS) or **Ctrl+O** (Windows/Linux) to open the file dialog
+- **Drag and drop:** Drag one or more `.md` files onto the Bokuchi window
+- **Folder tree:** Open a folder with the [folder tree panel](/guides/folder-tree/) and click a file to open it
+- **Recent files:** Press **Cmd+R** (macOS) or **Ctrl+R** (Windows/Linux) to see recently opened files
+
+Bokuchi can open `.md`, `.txt`, and `.markdown` files.
+
+## Saving Files
+
+| Action | macOS | Windows / Linux |
+|--------|-------|-----------------|
+| Save | Cmd+S | Ctrl+S |
+| Save As | Cmd+Shift+S | Ctrl+Shift+S |
+
+When saving a new file for the first time, a save dialog appears so you can choose the location and file name.
+
+## Auto-Save
+
+Bokuchi can automatically save your files as you type. Auto-save triggers 3 seconds after you stop typing (debounced).
+
+- **Default:** Enabled
+- **Configure:** Go to [Settings](/guides/settings/) > Advanced > Auto Save
+
+<Aside>
+Even with auto-save enabled, unsaved new files (files that have never been saved) will not be auto-saved — you need to save them manually the first time.
+</Aside>
+
+## Recent Files
+
+Press **Cmd+R** (macOS) or **Ctrl+R** (Windows/Linux) to open the recent files dialog.
+
+Features:
+- Search and filter through recently opened files
+- Preview the content of each file
+- Copy the file path
+- Remove files from the list
+- Configurable maximum number of entries (default: 20)
+
+## External File Changes
+
+If you edit a file in another application while it is open in Bokuchi, a dialog will appear asking whether you want to reload the file with the external changes.
+
+## Session Restoration
+
+When you close and reopen Bokuchi, all your previously open tabs, their content, and your settings are automatically restored.
+
+If a file has been moved or deleted since your last session, Bokuchi handles this gracefully and notifies you.
+
+## Next Steps
+
+- [Tabs](/guides/tabs/) — Manage multiple open files
+- [Export](/guides/export/) — Export your documents to HTML
+- [Settings](/guides/settings/) — Configure auto-save and other options

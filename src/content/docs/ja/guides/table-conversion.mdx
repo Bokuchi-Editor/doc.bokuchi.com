@@ -1,0 +1,56 @@
+---
+title: テーブル変換
+description: HTML テーブルや CSV/TSV データを Markdown テーブルに自動変換する機能を説明します。
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Bokuchi では、他の形式のテーブルデータをペーストすると、自動的に Markdown テーブルに変換できます。
+
+## 変換対象
+
+- **HTML テーブル** — Web ページやスプレッドシートからテーブルをコピーしてペースト
+- **TSV データ** — タブ区切りのデータ（Excel や Google スプレッドシートからのコピーなど）
+- **CSV データ** — カンマ区切りのデータ
+
+## 変換モード
+
+ペースト時の動作を選択できます：
+
+| モード | 動作 |
+|--------|------|
+| **自動（Auto）** | 確認なしで自動変換 |
+| **確認（Confirm）**（デフォルト） | プレビューダイアログを表示してから変換 |
+| **OFF** | 変換せずプレーンテキストとしてペースト |
+
+[設定](/ja/guides/settings/) > 詳細設定 > テーブル変換 でモードを変更できます。
+
+## 変換を回避する
+
+モード設定に関係なく、テーブルデータをプレーンテキストとしてペーストするには：
+
+- **macOS：** Shift+Cmd+V
+- **Windows/Linux：** Shift+Ctrl+V
+
+## 変換例
+
+以下の HTML をペーストすると：
+```html
+<table><tr><th>名前</th><th>年齢</th></tr><tr><td>Alice</td><td>30</td></tr></table>
+```
+
+以下の Markdown に変換されます：
+```markdown
+| 名前 | 年齢 |
+| --- | --- |
+| Alice | 30 |
+```
+
+<Aside>
+確認モード（Confirm）がおすすめです。変換結果をプレビューで確認してから挿入できるので、意図しない変換を防げます。
+</Aside>
+
+## 次のステップ
+
+- [Markdown 基本記法 — テーブル](/ja/guides/markdown-basics/#テーブル表) — Markdown テーブルを手動で書く方法
+- [設定](/ja/guides/settings/) — 変換モードの設定方法

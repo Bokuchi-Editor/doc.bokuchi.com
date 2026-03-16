@@ -1,0 +1,45 @@
+---
+title: Folder Tree
+description: Browse and open files from a folder using the folder tree (explorer) panel.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+The folder tree panel lets you browse a directory and open files directly from Bokuchi, similar to a file explorer.
+
+## Opening the Folder Tree
+
+Press **Ctrl+Shift+E** to toggle the folder tree panel.
+
+To set the folder to browse, use the menu or the button in the panel to select a directory.
+
+## Features
+
+- **File browsing** — Navigate your folder structure in a tree view
+- **Click to open** — Click a file to open it in a new tab
+- **Lazy loading** — Subdirectories load their contents on demand for performance
+- **Active file highlight** — The currently open file is highlighted in the tree
+- **File filter** — Show only Markdown files or all files
+
+<Aside>
+To toggle between showing only Markdown files and all files, use the filter button in the folder tree panel or change it in [Settings](/guides/settings/) > Interface > File Filter.
+</Aside>
+
+## Display Modes
+
+| Mode | Description |
+|------|-------------|
+| **Persistent** | Always visible as a side panel |
+| **Overlay** | Appears on top of the content when toggled |
+| **Off** | Panel is hidden |
+
+Change the display mode in [Settings](/guides/settings/) > Interface > Explorer Display Mode.
+
+## Merged Sidebar
+
+When using [vertical tabs](/guides/tabs/), the folder tree can be combined with the tab list in a single resizable sidebar for a more compact layout.
+
+## Next Steps
+
+- [Tabs](/guides/tabs/) — Manage open files with tabs
+- [Outline panel](/guides/outline/) — Navigate headings within a document

@@ -1,0 +1,59 @@
+---
+title: Tabs
+description: How to manage multiple open files with tabs in Bokuchi.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Bokuchi supports multi-tab editing, allowing you to work with multiple files at the same time.
+
+## Basics
+
+- Each open file has its own tab at the top of the window
+- Click a tab to switch to that file
+- The active tab is highlighted
+
+## Tab Navigation
+
+| Action | Shortcut |
+|--------|----------|
+| Next tab | Ctrl+Tab |
+| Previous tab | Ctrl+Shift+Tab |
+
+## Reordering Tabs
+
+Drag and drop tabs to rearrange their order.
+
+## Tab Context Menu
+
+Right-click a tab to access additional options:
+
+- Close the current tab
+- Close other tabs
+- Close tabs to the right
+
+## Unsaved Changes Indicator
+
+A tab with unsaved changes shows a badge or dot indicator. When you try to close a tab with unsaved changes, Bokuchi will ask if you want to save first.
+
+## Tab Layout
+
+Bokuchi offers two tab layouts:
+
+- **Horizontal** (default) — Tabs appear in a row at the top
+- **Vertical** — Tabs appear in a column on the left side
+
+Switch between layouts in [Settings](/guides/settings/) > Interface > Tab Layout.
+
+<Aside>
+When using vertical tabs, the tab list can be combined with the [folder tree](/guides/folder-tree/) in a merged sidebar for a more compact layout.
+</Aside>
+
+## Session Persistence
+
+All open tabs are saved when you close Bokuchi and restored when you reopen it, including the content of each tab and which tab was active.
+
+## Next Steps
+
+- [Editor and preview](/guides/editor-and-preview/) — Learn about view modes
+- [Folder tree](/guides/folder-tree/) — Browse and open files from a directory

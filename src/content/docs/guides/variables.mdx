@@ -1,0 +1,91 @@
+---
+title: Variables
+description: Use Bokuchi's variable system to reuse text across your documents.
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+Variables let you define a value once and use it in multiple places. When the document is rendered, the variable placeholder is replaced with the actual value.
+
+This is a feature unique to Bokuchi — it's especially useful for templates, reports, and documents where the same information (like a project name, date, or author) appears in several places.
+
+## How Variables Work
+
+Write `{{variableName}}` anywhere in your document. In the preview, it will be replaced with the value you defined.
+
+### Quick Example
+
+If you define a variable `author` with the value `Alice`, then:
+
+```markdown
+Written by {{author}}
+```
+
+will display as:
+
+> Written by Alice
+
+## Global Variables
+
+Global variables are available in all files. They are managed in the settings panel.
+
+<Steps>
+1. Open **Settings** (Cmd+, on macOS / Ctrl+, on Windows/Linux)
+2. Go to the **Global Variables** tab
+3. Add a variable name and value, then click **Add**
+</Steps>
+
+### Use Cases
+
+- Company name, department name
+- Author name
+- Common URLs or paths
+
+## File-Local Variables
+
+You can define variables that apply only to the current file using an HTML comment at the top of the file:
+
+```markdown
+<!-- @var title: Monthly Report -->
+<!-- @var date: 2026-03-01 -->
+<!-- @var author: Alice -->
+
+# {{title}}
+
+Date: {{date}}
+Author: {{author}}
+```
+
+### Syntax
+
+```
+<!-- @var variableName: value -->
+```
+
+## Priority Order
+
+When the same variable name is defined both locally and globally:
+
+1. **File-local variable** — used first
+2. **Global variable** — used if no local definition exists
+3. **Undefined** — the `{{variableName}}` text is displayed as-is
+
+## Export and Import
+
+You can export all global variables to a YAML file and import them on another machine or share them with your team.
+
+- **Export:** Settings > Global Variables > Export
+- **Import:** Settings > Global Variables > Import
+
+## Saving with Variables Expanded
+
+Bokuchi can save a copy of your document with all variables replaced by their actual values. This is useful when you need to share a finalized version.
+
+<Aside>
+Variables are only expanded in the preview and during export. The source file always keeps the `{{variableName}}` placeholders, so you can change values later.
+</Aside>
+
+## Next Steps
+
+- [Settings](/guides/settings/) — Configure global variables
+- [Export](/guides/export/) — Export documents with variables expanded

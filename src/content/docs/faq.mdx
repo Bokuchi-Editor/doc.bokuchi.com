@@ -1,0 +1,68 @@
+---
+title: FAQ
+description: Frequently asked questions about Bokuchi.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## General
+
+### What is Markdown?
+
+Markdown is a lightweight way to format text using simple characters. For example, `**bold**` makes text **bold**, and `# Heading` creates a heading. In Bokuchi, you don't need to memorize the syntax — the [toolbar](/guides/markdown-toolbar/) lets you format text with buttons.
+
+### Is Bokuchi free?
+
+Yes. Bokuchi is free and open source.
+
+### Does Bokuchi require an internet connection?
+
+No. Bokuchi works completely offline. Your files are stored locally on your computer, and no data is sent over the network.
+
+## Files
+
+### Where are my files saved?
+
+Files are saved wherever you choose. Bokuchi does not use a proprietary storage location or cloud service.
+
+### Can I open Markdown files created in other editors?
+
+Yes. Bokuchi supports `.md`, `.txt`, and `.markdown` files. Any standard Markdown file will work.
+
+### Is there auto-save?
+
+Yes. Auto-save is enabled by default and saves your file 3 seconds after you stop typing. You can turn it off in [Settings](/guides/settings/) > Advanced.
+
+### Will my tabs be restored when I reopen the app?
+
+Yes. All open tabs, their content, and your settings are automatically restored when you reopen Bokuchi.
+
+## Appearance
+
+### How do I change the theme?
+
+Go to [Settings](/guides/settings/) > Appearance, or click the theme name in the status bar at the bottom of the window. See [Themes](/guides/themes/) for details.
+
+### How do I change the language?
+
+Go to [Settings](/guides/settings/) > Interface > Language. Bokuchi supports [14 languages](/reference/supported-languages/).
+
+## Troubleshooting
+
+### Windows: SmartScreen shows "Unknown publisher"
+
+This is normal for apps not signed with a commercial code-signing certificate. Click **More info**, then **Run anyway**. See the [installation guide](/getting-started/installation/) for detailed steps.
+
+### Can I export to PDF?
+
+Currently, Bokuchi supports [HTML export](/guides/export/). PDF export is planned for a future release.
+
+## Features
+
+### What are variables?
+
+Variables let you define a value once (like an author name or date) and reuse it across your document with `{{variableName}}`. See [Variables](/guides/variables/) for full details.
+
+### Can I paste tables from Excel or web pages?
+
+Yes. Bokuchi can automatically convert HTML tables and CSV/TSV data into Markdown tables when you paste them. See [Table Conversion](/guides/table-conversion/).

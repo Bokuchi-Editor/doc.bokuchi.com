@@ -1,0 +1,40 @@
+---
+title: Markdown Toolbar
+description: Use the toolbar to format your Markdown without memorizing syntax.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+The Markdown toolbar sits between the tab bar and the editor. It lets you apply formatting with a single click — no need to memorize Markdown syntax.
+
+## Available Buttons
+
+| Button | Action | Markdown inserted |
+|--------|--------|-------------------|
+| **H1 / H2 / H3** | Insert heading (dropdown for H1–H6) | `# ` / `## ` / `### ` etc. |
+| **B** | Bold | `**text**` |
+| **I** | Italic | `*text*` |
+| **S** | Strikethrough | `~~text~~` |
+| **Bullet list** | Unordered list | `- item` |
+| **Numbered list** | Ordered list | `1. item` |
+| **Checkbox** | Task list item | `- [ ] item` |
+| **Link** | Insert link | `[text](url)` |
+| **Image** | Insert image | `![alt](url)` |
+| **Code** | Code block | ` ``` ` |
+| **Quote** | Blockquote | `> text` |
+| **Rule** | Horizontal line | `---` |
+| **Table** | Insert table template | Pipe-based table |
+
+## How It Works
+
+1. **Without selection** — Click a button to insert the formatting at the cursor position with placeholder text
+2. **With selection** — Select text first, then click a button to wrap the selected text with the formatting
+
+<Aside>
+The toolbar is especially useful if you are new to Markdown. You can write your text first and then apply formatting by selecting words and clicking toolbar buttons.
+</Aside>
+
+## Next Steps
+
+- [Markdown basics](/guides/markdown-basics/) — Understand what each formatting does
+- [Editor and preview](/guides/editor-and-preview/) — See your formatting in real time

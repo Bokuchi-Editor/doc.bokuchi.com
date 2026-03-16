@@ -1,0 +1,72 @@
+---
+title: Settings
+description: Customize Bokuchi's editor, appearance, interface, and advanced options.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Open the settings panel with **Cmd+,** (macOS) or **Ctrl+,** (Windows/Linux). You can also press **F1** and access settings from the help menu.
+
+## Settings Categories
+
+### Editor
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Font size | Editor text size | 14 |
+| Line numbers | Show line numbers in the gutter | On |
+| Tab size | Number of spaces per tab | 2 |
+| Word wrap | Wrap long lines to fit the editor width | On |
+| Minimap | Show a minimap overview of the document | Off |
+
+### Appearance
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Theme | Choose from 5 built-in themes | Default |
+
+See [Themes](/guides/themes/) for details on each theme.
+
+### Interface
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Language | UI language (14 languages available) | System language |
+| Tab layout | Horizontal or vertical tabs | Horizontal |
+| Zoom level | Interface zoom | 100% |
+| Outline display mode | Persistent or overlay | Persistent |
+| Explorer display mode | Persistent, overlay, or off | Off |
+| File filter | Show Markdown files only or all files | Markdown only |
+
+### Advanced
+
+| Setting | Description | Default |
+|---------|-------------|---------|
+| Auto save | Save files automatically after 3 seconds of inactivity | On |
+| Show whitespace | Display invisible characters | Off |
+| Table conversion | How to handle pasted table data: auto, confirm, or off | Confirm |
+
+### Global Variables
+
+Manage your [global variables](/guides/variables/) — add, edit, delete, import, and export.
+
+## Export and Import Settings
+
+You can export all your settings as a JSON file and import them on another machine. This is useful for backing up your configuration or sharing it.
+
+- **Export:** Click the Export button in the settings panel
+- **Import:** Click the Import button and select a previously exported JSON file
+
+## Reset Settings
+
+If you want to start fresh, use the Reset button to restore all settings to their defaults.
+
+<Aside>
+Resetting settings will not delete your global variables. Variable management is handled separately.
+</Aside>
+
+## Next Steps
+
+- [Themes](/guides/themes/) — Preview all 5 themes
+- [Variables](/guides/variables/) — Set up reusable text variables
+- [Keyboard shortcuts](/reference/keyboard-shortcuts/) — Full shortcut reference

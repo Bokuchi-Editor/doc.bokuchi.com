@@ -1,0 +1,56 @@
+---
+title: Editor & Preview
+description: Learn about the editor, preview, view modes, and synchronized scrolling in Bokuchi.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Bokuchi provides a side-by-side editing experience where you write Markdown on the left and see the rendered result on the right.
+
+## View Modes
+
+| Mode | Description | Shortcut |
+|------|-------------|----------|
+| Split View | Editor + Preview side by side | Ctrl+Shift+1 |
+| Editor Only | Full-width editor | Ctrl+Shift+2 |
+| Preview Only | Full-width preview | Ctrl+Shift+3 |
+
+Press **Ctrl+Shift+V** to cycle through the three modes.
+
+## Synchronized Scrolling
+
+In split view, the editor and preview scroll together. When you scroll one panel, the other follows so you always see the corresponding content.
+
+## Preview Features
+
+### Interactive Checkboxes
+
+Checkboxes in the preview are clickable. When you click a checkbox, the corresponding `- [ ]` or `- [x]` in the editor is updated automatically.
+
+### Links
+
+Links in the preview are clickable. External links open in your system's default browser.
+
+### Code Blocks
+
+Code blocks in the preview have syntax highlighting for over 190 programming languages. The language is detected from the label after the opening triple backticks.
+
+## Editor Features
+
+The editor is powered by Monaco Editor (the same editor used in VS Code) and supports:
+
+- **Syntax highlighting** for Markdown
+- **Line numbers** — toggle on/off in settings
+- **Word wrap** — toggle on/off in settings
+- **Minimap** — a small overview of your document, toggle on/off
+- **Whitespace display** — show invisible characters
+
+<Aside>
+All editor display options can be configured in [Settings](/guides/settings/) > Editor.
+</Aside>
+
+## Next Steps
+
+- [Markdown toolbar](/guides/markdown-toolbar/) — Format text using buttons
+- [Search and replace](/guides/search-and-replace/) — Find and replace text
+- [Zoom](/guides/zoom/) — Adjust the interface size

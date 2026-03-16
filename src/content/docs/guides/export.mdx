@@ -1,0 +1,43 @@
+---
+title: Export
+description: Export your Markdown documents as HTML files.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Bokuchi can export your Markdown document as a styled HTML file that you can open in any web browser or share with others.
+
+## HTML Export
+
+The exported HTML file includes:
+
+- **Full styling** — The rendered Markdown looks the same as in Bokuchi's preview
+- **Syntax highlighting** — Code blocks retain their color highlighting
+- **Embedded images** — Local images referenced with relative paths are embedded as data URIs, so the HTML file is self-contained
+- **Expanded variables** — All [variables](/guides/variables/) are replaced with their actual values
+
+## How to Export
+
+1. Open the file you want to export
+2. Use the export option from the menu
+3. Choose the save location and file name
+4. The `.html` file is saved
+
+<Aside>
+The exported HTML file is self-contained — you can send it to anyone, and they can open it in a web browser without needing Bokuchi or any other software.
+</Aside>
+
+## Other Export Options
+
+### Settings Export / Import
+
+Export your Bokuchi settings as a JSON file, or import settings from a file. Useful for syncing your configuration across machines.
+
+### Variable Export / Import
+
+Export global variables as a YAML file, or import variables from a YAML file. Useful for sharing variable sets with your team.
+
+## Next Steps
+
+- [Variables](/guides/variables/) — Learn about the variable system
+- [Settings](/guides/settings/) — Configure Bokuchi to your liking
