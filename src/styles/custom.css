@@ -1,0 +1,4 @@
+/* Override Starlight dark mode background */
+:root[data-theme='dark'] {
+	--sl-color-bg: #0d1117;
+}

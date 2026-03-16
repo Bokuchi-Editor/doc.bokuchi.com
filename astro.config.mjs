@@ -7,7 +7,8 @@ export default defineConfig({
 	site: 'https://doc.bokuchi.com',
 	integrations: [
 		starlight({
-			title: 'Bokuchi Docs',
+			title: 'Bokuchi User Guide',
+			customCss: ['./src/styles/custom.css'],
 			logo: {
 				src: './src/assets/bokuchi-icon.png',
 				replacesTitle: false,
