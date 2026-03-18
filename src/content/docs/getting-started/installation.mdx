@@ -4,6 +4,11 @@ description: How to install Bokuchi on Windows, macOS, and Linux.
 ---
 
 import { Tabs, TabItem, Steps, Aside } from '@astrojs/starlight/components';
+import imgMacDmg from '../../../assets/images/installation-macos-dmg-01.png';
+import imgSmartscreen01 from '../../../assets/images/installation-windows-smartscreen-01.png';
+import imgSmartscreen02 from '../../../assets/images/installation-windows-smartscreen-02.png';
+import imgSmartscreen03 from '../../../assets/images/installation-windows-smartscreen-03.png';
+import imgFirstLaunch from '../../../assets/images/installation-first-launch-01.png';
 
 Bokuchi is available for Windows, macOS, and Linux. Download the latest version from the [GitHub Releases page](https://github.com/Bokuchi-Editor/bokuchi/releases/latest).
 
@@ -24,6 +29,8 @@ Visit the [Releases page](https://github.com/Bokuchi-Editor/bokuchi/releases/lat
     1. Open the `.dmg` file
     2. Drag **Bokuchi** to the **Applications** folder
     3. Open Bokuchi from your Applications folder
+
+    <img src={imgMacDmg.src} alt="macOS DMG installer — drag Bokuchi to Applications" width="600" />
   </TabItem>
   <TabItem label="Linux">
     - **`.deb`** — Debian/Ubuntu package
@@ -44,12 +51,20 @@ Visit the [Releases page](https://github.com/Bokuchi-Editor/bokuchi/releases/lat
 
 ## Windows: SmartScreen Warning
 
-When you run the Bokuchi installer on Windows, you may see a **Microsoft Defender SmartScreen** warning saying "Windows protected your PC" or "Unknown publisher."
+When you download and run the Bokuchi installer on Windows, you may see a series of warnings from the browser and Microsoft Defender SmartScreen.
 
 <Steps>
-1. On the SmartScreen dialog, click **More info**
-2. Click the **Run anyway** button that appears
-3. The installer will proceed normally
+1. **Browser download warning** — Your browser may show a warning that the file is not commonly downloaded. Click the menu or **More** option to proceed.
+
+   <img src={imgSmartscreen01.src} alt="Browser download warning" width="600" />
+
+2. **Save the file** — Select **Save** (or **Keep**) from the menu to save the installer to your computer.
+
+   <img src={imgSmartscreen02.src} alt="Select Save to keep the file" width="600" />
+
+3. **SmartScreen confirmation** — Microsoft Defender SmartScreen may show a final confirmation dialog. Click **Keep** to allow the file.
+
+   <img src={imgSmartscreen03.src} alt="SmartScreen confirmation — click Keep" width="600" />
 </Steps>
 
 <Aside>
@@ -59,6 +74,8 @@ This warning appears because Bokuchi is not signed with a commercial code-signin
 ## After Installation
 
 When you launch Bokuchi for the first time, you will see the editor with an empty document ready for you to start writing.
+
+<img src={imgFirstLaunch.src} alt="Bokuchi first launch screen" width="700" />
 
 The interface language will match your system language if it is one of the [14 supported languages](/reference/supported-languages/). You can change it at any time in [Settings](/guides/settings/).
 
