@@ -3,7 +3,7 @@ title: インストール
 description: Windows、macOS、Linux への Bokuchi のインストール方法を説明します。
 ---
 
-import { Tabs, TabItem, Steps, Aside } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Steps, Aside } from "@astrojs/starlight/components";
 
 Bokuchi は Windows、macOS、Linux に対応しています。最新版は [GitHub Releases ページ](https://github.com/Bokuchi-Editor/bokuchi/releases/latest)からダウンロードできます。
 
@@ -13,10 +13,10 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
 
 <Tabs>
   <TabItem label="Windows">
-    - **`.exe`** — 標準インストーラー（推奨）
-    - **`.msi`** — MSI インストーラー
+    - **`.exe`** — 標準インストーラー
 
     ダウンロードしたインストーラーを実行し、画面の指示に従ってください。
+
   </TabItem>
   <TabItem label="macOS">
     - **`.dmg`** — ディスクイメージ（ユニバーサル版。Intel / Apple Silicon 両対応）
@@ -24,6 +24,7 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
     1. `.dmg` ファイルを開きます
     2. **Bokuchi** を **アプリケーション** フォルダにドラッグします
     3. アプリケーションフォルダから Bokuchi を起動します
+
   </TabItem>
   <TabItem label="Linux">
     - **`.deb`** — Debian / Ubuntu パッケージ
@@ -39,6 +40,7 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
     chmod +x Bokuchi_*.AppImage
     ./Bokuchi_*.AppImage
     ```
+
   </TabItem>
 </Tabs>
 
@@ -47,13 +49,14 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
 Windows で Bokuchi のインストーラーを実行すると、**Microsoft Defender SmartScreen** の警告が表示され、「Windows によって PC が保護されました」や「発行元不明」と表示されることがあります。
 
 <Steps>
-1. SmartScreen のダイアログで **詳細情報** をクリックします
-2. 表示された **実行** ボタンをクリックします
-3. インストーラーが正常に進行します
+  1. SmartScreen のダイアログで **詳細情報** をクリックします 2. 表示された
+  **実行** ボタンをクリックします 3. インストーラーが正常に進行します
 </Steps>
 
 <Aside>
-この警告は、Bokuchi が商用のコード署名証明書で署名されていないために表示されます。Bokuchi はオープンソースソフトウェアであり、安全にお使いいただけます。初回インストール時のみ表示されます。
+  この警告は、Bokuchi
+  が商用のコード署名証明書で署名されていないために表示されます。Bokuchi
+  はオープンソースソフトウェアであり、安全にお使いいただけます。初回インストール時のみ表示されます。
 </Aside>
 
 ## インストール後

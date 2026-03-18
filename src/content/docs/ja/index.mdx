@@ -3,7 +3,7 @@ title: Bokuchi 使い方ガイド
 description: Bokuchi の公式ドキュメントサイトです。無料・オフラインで使える、Windows / macOS / Linux 対応の Markdown エディタ。
 template: splash
 hero:
-  tagline: 無料・オフラインで使える Markdown エディタ。Windows、macOS、Linux に対応。インターネット接続なしで、文書の作成・プレビュー・管理ができます。
+  tagline: 無料で使える軽量 Markdown エディタ。Windows/Mac/Linux に対応。文書の作成・プレビュー・管理を手軽に。オフラインで動作。
   image:
     file: ../../../assets/bokuchi-icon.png
   actions:
@@ -17,21 +17,22 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
 ## Bokuchi の特長
 
 <CardGrid stagger>
   <Card title="完全オフライン" icon="laptop">
-    インターネット接続は不要です。ファイルはすべてお使いのパソコンに保存されます。クラウド連携やアカウント登録はありません。
+    インターネット接続しなくても使用可能です。ファイルはすべてお使いのパソコンに保存されます。作者がオフラインでも使いたいこと、またセキュリティ上の理由からクラウド連携やアカウント登録はありません。今後の実装予定も今のところ考えておりません。
   </Card>
   <Card title="リアルタイムプレビュー" icon="document">
-    入力した Markdown がすぐに整形されて表示されます。分割表示・エディタのみ・プレビューのみの3つのモードから選べます。
+    リアルタイムで、入力した Markdown
+    はすぐに整形表示されます。分割表示・エディタのみ・プレビューのみの3つのビューモードから選べます。
   </Card>
   <Card title="マルチタブ編集" icon="list-format">
-    複数のファイルをタブで同時に開いて管理できます。ドラッグ＆ドロップで並べ替え、セッションは自動復元されます。
+    複数のファイルをタブで同時に開いて管理できます。ドラッグ＆ドロップで並べ替え可能。アプリを終了しても、次回の起動時にセッションは自動復元されます。
   </Card>
   <Card title="豊富な機能" icon="setting">
-    変数システム、テーブル変換、フォルダツリー、アウトラインパネル、5種類のテーマ、14言語のUI対応など、すべて内蔵しています。
+    変数システム、テーブル変換、フォルダツリー、アウトラインパネル、5種類のテーマ、14言語のUI対応など。
   </Card>
 </CardGrid>
