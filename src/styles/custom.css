@@ -2,3 +2,7 @@
 :root[data-theme='dark'] {
 	--sl-color-bg: #0d1117;
 }
+:root[data-theme='light'] {
+	--sl-color-accent: #29335c;
+	--sl-color-blue-low: #cdddf4;
+}
