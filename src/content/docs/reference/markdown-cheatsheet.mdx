@@ -85,6 +85,31 @@ Text with {{name}} placeholder.
 
 See [Variables](/guides/variables/) for full documentation.
 
+## Bokuchi-Specific: Math (KaTeX)
+
+```markdown
+Inline: $E = mc^2$
+
+Display:
+
+$$
+\sum_{i=1}^{n} x_i
+$$
+```
+
+Enable in Settings > Advanced > Rendering Extensions.
+
+## Bokuchi-Specific: Diagrams (Mermaid)
+
+````markdown
+```mermaid
+graph LR
+    A --> B --> C
+```
+````
+
+Enable in Settings > Advanced > Rendering Extensions.
+
 ## Bokuchi-Specific: Text Effects
 
 Wrap content in `:::effectName` and `:::` to apply a visual effect in the preview.

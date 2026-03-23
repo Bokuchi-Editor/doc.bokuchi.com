@@ -143,6 +143,39 @@ Create a divider line with three or more dashes:
 ---
 ```
 
+## Math Expressions (KaTeX)
+
+When KaTeX is enabled in [Settings](/guides/settings/) > Advanced > Rendering Extensions, you can render math expressions.
+
+**Inline math** — wrap with single dollar signs:
+
+```markdown
+The formula $E = mc^2$ is well known.
+```
+
+**Display math** — wrap with double dollar signs:
+
+```markdown
+$$
+\sum_{i=1}^{n} x_i
+$$
+```
+
+## Diagrams (Mermaid)
+
+When Mermaid is enabled in [Settings](/guides/settings/) > Advanced > Rendering Extensions, you can create diagrams using ` ```mermaid ` fenced code blocks.
+
+````markdown
+```mermaid
+graph TD
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Result A]
+    B -->|No| D[Result B]
+```
+````
+
+Mermaid supports flowcharts, sequence diagrams, class diagrams, state diagrams, and more.
+
 ## Next Steps
 
 - [Markdown toolbar](/guides/markdown-toolbar/) — Apply formatting using buttons
