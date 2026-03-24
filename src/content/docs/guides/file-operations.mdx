@@ -4,6 +4,8 @@ description: How to create, open, save, and manage files in Bokuchi.
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import imgRecent from '../../../assets/images/guides/file-recent-files-01.png';
+import imgChange from '../../../assets/images/guides/file-change-detection-01.png';
 
 Bokuchi provides all the file operations you need for working with Markdown documents.
 
@@ -53,9 +55,13 @@ Features:
 - Remove files from the list
 - Configurable maximum number of entries (default: 20)
 
+<img src={imgRecent.src} alt="Recent files dialog with search, preview, and path copy" width="700" />
+
 ## External File Changes
 
 If you edit a file in another application while it is open in Bokuchi, a dialog will appear asking whether you want to reload the file with the external changes.
+
+<img src={imgChange.src} alt="File change detection dialog asking whether to reload" width="700" />
 
 ## Session Restoration
 

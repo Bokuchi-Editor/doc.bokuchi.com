@@ -4,6 +4,7 @@ description: Automatically convert HTML tables, CSV, and TSV data into Markdown 
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import imgConfirm from '../../../assets/images/guides/table-conversion-confirm-01.png';
 
 Bokuchi can automatically convert table data from other formats into Markdown table syntax when you paste it.
 
@@ -22,6 +23,8 @@ You can choose how Bokuchi handles table data on paste:
 | **Auto** | Converts automatically without asking |
 | **Confirm** (default) | Shows a preview dialog so you can review before converting |
 | **Off** | Pastes as plain text, no conversion |
+
+<img src={imgConfirm.src} alt="Table conversion confirm dialog showing a preview of the converted table" width="600" />
 
 Change the mode in [Settings](/guides/settings/) > Advanced > Table Conversion.
 
