@@ -5,6 +5,7 @@ description: Export your Markdown documents as HTML files.
 
 import { Aside } from '@astrojs/starlight/components';
 import imgExport from '../../../assets/images/guides/export-html-01.png';
+import imgExportButton from '../../../assets/images/guides/export-html-button-01.png';
 
 Bokuchi can export your Markdown document as a styled HTML file that you can open in any web browser or share with others.
 
@@ -21,9 +22,11 @@ The exported HTML file includes:
 ## How to Export
 
 1. Open the file you want to export
-2. Use the export option from the menu
+2. Click the **download button** in the top-right corner of the preview panel, or use the export option from the menu
 3. Choose the save location and file name
 4. The `.html` file is saved
+
+<img src={imgExportButton.src} alt="Download button in the preview panel header for quick HTML export" width="700" />
 
 <img src={imgExport.src} alt="Exported HTML file displayed in a web browser" width="700" />
 

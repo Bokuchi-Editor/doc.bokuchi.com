@@ -6,6 +6,8 @@ description: Browse and open files from a folder using the folder tree (explorer
 import { Aside } from '@astrojs/starlight/components';
 import imgFolderTree from '../../../assets/images/guides/folder-tree-panel-01.png';
 import imgMerged from '../../../assets/images/guides/folder-tree-merged-01.png';
+import imgRename01 from '../../../assets/images/guides/folder-tree-file-rename-01.png';
+import imgRename02 from '../../../assets/images/guides/folder-tree-file-rename-02.png';
 
 The folder tree panel lets you browse a directory and open files directly from Bokuchi, similar to a file explorer.
 
@@ -24,6 +26,17 @@ To set the folder to browse, use the menu or the button in the panel to select a
 - **Lazy loading** — Subdirectories load their contents on demand for performance
 - **Active file highlight** — The currently open file is highlighted in the tree
 - **File filter** — Show only Markdown files or all files
+- **Rename** — Right-click a file to rename it from the context menu
+
+### Renaming Files
+
+Right-click a file in the tree to open the context menu, then select **Rename**.
+
+<img src={imgRename01.src} alt="Context menu with Rename option in the folder tree" width="700" />
+
+A dialog appears where you can enter the new file name.
+
+<img src={imgRename02.src} alt="Rename dialog for changing the file name" width="700" />
 
 <Aside>
 To toggle between showing only Markdown files and all files, use the filter button in the folder tree panel or change it in [Settings](/guides/settings/) > Interface > File Filter.
