@@ -37,17 +37,49 @@ Bokuchi では、他の形式のテーブルデータをペーストすると、
 
 ## 変換例
 
-以下の HTML をペーストすると：
-```html
-<table><tr><th>名前</th><th>年齢</th></tr><tr><td>Alice</td><td>30</td></tr></table>
-```
+### HTML テーブル
 
-以下の Markdown に変換されます：
+Web ページやスプレッドシートからテーブルをコピーしてペーストすると、Markdown テーブルに変換されます。
+以下のテーブルを選択してコピーし、Bokuchi にペーストしてみてください：
+
+<div style="border: 1.5px dashed var(--sl-color-gray-4); border-radius: 8px; padding: 1rem 1.25rem 0.75rem; margin: 1rem 0; background: var(--sl-color-gray-6);">
+  <small style="color: var(--sl-color-gray-3); display: block; margin-bottom: 0.5rem;">コピー用サンプル</small>
+  <table>
+    <tr><th>名前</th><th>年齢</th></tr>
+    <tr><td>Alice</td><td>30</td></tr>
+    <tr><td>Bob</td><td>25</td></tr>
+  </table>
+</div>
+
+変換結果：
 ```markdown
 | 名前 | 年齢 |
 | --- | --- |
 | Alice | 30 |
+| Bob | 25 |
 ```
+
+### CSV データ
+
+以下のカンマ区切りデータをコピーしてペーストしてみてください：
+
+```
+名前,年齢,都市
+Alice,30,東京
+Bob,25,大阪
+```
+
+変換結果：
+```markdown
+| 名前 | 年齢 | 都市 |
+| --- | --- | --- |
+| Alice | 30 | 東京 |
+| Bob | 25 | 大阪 |
+```
+
+### TSV データ
+
+Excel や Google スプレッドシートからコピーすると、タブ区切り（TSV）形式でペーストされます。TSV データも同様に Markdown テーブルへ変換されます。
 
 <Aside>
 確認モード（Confirm）がおすすめです。変換結果をプレビューで確認してから挿入できるので、意図しない変換を防げます。
