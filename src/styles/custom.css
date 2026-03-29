@@ -1,4 +1,9 @@
 /* Override Starlight dark mode background */
 :root[data-theme='dark'] {
 	--sl-color-bg: #0d1117;
+	--sl-color-accent-high: #cdddf4;
+}
+:root[data-theme='light'] {
+	--sl-color-accent: #29335c;
+	--sl-color-blue-low: #cdddf4;
 }

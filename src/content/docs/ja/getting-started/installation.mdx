@@ -3,7 +3,12 @@ title: インストール
 description: Windows、macOS、Linux への Bokuchi のインストール方法を説明します。
 ---
 
-import { Tabs, TabItem, Steps, Aside } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Steps, Aside } from "@astrojs/starlight/components";
+import imgMacDmg from "../../../../assets/images/installation-macos-dmg-01.png";
+import imgSmartscreen01 from "../../../../assets/images/installation-windows-smartscreen-01.png";
+import imgSmartscreen02 from "../../../../assets/images/installation-windows-smartscreen-02.png";
+import imgSmartscreen03 from "../../../../assets/images/installation-windows-smartscreen-03.png";
+import imgEmptyState from "../../../../assets/images/empty-state-01.png";
 
 Bokuchi は Windows、macOS、Linux に対応しています。最新版は [GitHub Releases ページ](https://github.com/Bokuchi-Editor/bokuchi/releases/latest)からダウンロードできます。
 
@@ -13,10 +18,10 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
 
 <Tabs>
   <TabItem label="Windows">
-    - **`.exe`** — 標準インストーラー（推奨）
-    - **`.msi`** — MSI インストーラー
+    - **`.exe`** — 標準インストーラー
 
     ダウンロードしたインストーラーを実行し、画面の指示に従ってください。
+
   </TabItem>
   <TabItem label="macOS">
     - **`.dmg`** — ディスクイメージ（ユニバーサル版。Intel / Apple Silicon 両対応）
@@ -24,6 +29,9 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
     1. `.dmg` ファイルを開きます
     2. **Bokuchi** を **アプリケーション** フォルダにドラッグします
     3. アプリケーションフォルダから Bokuchi を起動します
+
+    <img src={imgMacDmg.src} alt="macOS DMG インストーラー — Bokuchi を Applications にドラッグ" width="600" />
+
   </TabItem>
   <TabItem label="Linux">
     - **`.deb`** — Debian / Ubuntu パッケージ
@@ -39,6 +47,7 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
     chmod +x Bokuchi_*.AppImage
     ./Bokuchi_*.AppImage
     ```
+
   </TabItem>
 </Tabs>
 
@@ -47,9 +56,17 @@ Bokuchi は Windows、macOS、Linux に対応しています。最新版は [Git
 Windows で Bokuchi のインストーラーを実行すると、**Microsoft Defender SmartScreen** の警告が表示され、「Windows によって PC が保護されました」や「発行元不明」と表示されることがあります。
 
 <Steps>
-1. SmartScreen のダイアログで **詳細情報** をクリックします
-2. 表示された **実行** ボタンをクリックします
-3. インストーラーが正常に進行します
+1. **ブラウザのダウンロード警告** — ブラウザが「一般的にダウンロードされていない」という警告を表示することがあります。メニューまたは**詳細**をクリックして進みます。
+
+   <img src={imgSmartscreen01.src} alt="ブラウザのダウンロード警告" width="600" />
+
+2. **ファイルを保存** — メニューから**保存**を選択してインストーラーをパソコンに保存します。
+
+   <img src={imgSmartscreen02.src} alt="保存を選択してファイルをダウンロード" width="600" />
+
+3. **SmartScreen の確認** — Microsoft Defender SmartScreen が最終確認ダイアログを表示することがあります。**保存する**をクリックしてファイルを許可します。
+
+   <img src={imgSmartscreen03.src} alt="SmartScreen の確認 — 保存するをクリック" width="600" />
 </Steps>
 
 <Aside>
@@ -58,9 +75,15 @@ Windows で Bokuchi のインストーラーを実行すると、**Microsoft Def
 
 ## インストール後
 
-Bokuchi を初めて起動すると、空のドキュメントが開いた状態のエディタが表示されます。すぐに文章を書き始めることができます。
+Bokuchi を初めて起動すると、初期画面が表示されます。**新規ファイル** で新しいファイルを作成するか、**ファイルを開く** で既存のファイルを開いてください。
 
-インターフェースの言語は、お使いのシステム言語が[対応14言語](/ja/reference/supported-languages/)に含まれていれば自動的に設定されます。[設定](/ja/guides/settings/)からいつでも変更できます。
+<img
+  src={imgEmptyState.src}
+  alt="Bokuchi 初回起動画面 — New File と Open File ボタンが表示された Empty State"
+  width="700"
+/>
+
+インターフェースの初期言語は英語です。[設定](/ja/guides/settings/) > インターフェース > 言語 から、[対応14言語](/ja/reference/supported-languages/)のいずれかに変更できます。
 
 ## 次のステップ
 

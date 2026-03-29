@@ -4,10 +4,12 @@ description: Bokuchi の画面各部の名称と役割を説明します。
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import imgAnnotated from '../../../../assets/images/ui-overview-annotated-01.png';
+import imgViewModes from '../../../../assets/images/ui-overview-view-modes-01.png';
 
 このページでは、Bokuchi の画面構成を説明します。
 
-{/* TODO: 注釈付きスクリーンショットを追加 */}
+<img src={imgAnnotated.src} alt="Bokuchi の画面構成：タブバー、エディタ、プレビュー、ツールバー、ステータスバー" width="700" />
 
 ## 画面の構成
 
@@ -70,6 +72,8 @@ Bokuchi には3つの表示モードがあります：
 | **プレビューのみ** | プレビューを全幅で表示 | Ctrl+Shift+3 |
 
 **Ctrl+Shift+V** で3つのモードを順に切り替えることもできます。
+
+<img src={imgViewModes.src} alt="3つの表示モード：エディタのみ、プレビューのみ、分割ビュー" width="700" />
 
 <Aside>
 分割ビューがデフォルトで、ほとんどの場面でおすすめです。書きながら結果を同時に確認できます。

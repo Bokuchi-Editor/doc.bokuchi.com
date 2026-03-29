@@ -4,6 +4,7 @@ description: Automatically convert HTML tables, CSV, and TSV data into Markdown 
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import imgConfirm from '../../../assets/images/guides/table-conversion-confirm-01.png';
 
 Bokuchi can automatically convert table data from other formats into Markdown table syntax when you paste it.
 
@@ -23,6 +24,8 @@ You can choose how Bokuchi handles table data on paste:
 | **Confirm** (default) | Shows a preview dialog so you can review before converting |
 | **Off** | Pastes as plain text, no conversion |
 
+<img src={imgConfirm.src} alt="Table conversion confirm dialog showing a preview of the converted table" width="600" />
+
 Change the mode in [Settings](/guides/settings/) > Advanced > Table Conversion.
 
 ## Bypassing Conversion
@@ -32,19 +35,51 @@ If you want to paste table data as plain text without conversion (regardless of 
 - **macOS:** Shift+Cmd+V
 - **Windows/Linux:** Shift+Ctrl+V
 
-## Example
+## Examples
 
-Pasting this HTML:
-```html
-<table><tr><th>Name</th><th>Age</th></tr><tr><td>Alice</td><td>30</td></tr></table>
-```
+### HTML Tables
 
-Results in this Markdown:
+When you copy a table from a web page or spreadsheet and paste it, Bokuchi converts it to a Markdown table.
+Try selecting the table below, copying it, and pasting it into Bokuchi:
+
+<div style="border: 1.5px dashed var(--sl-color-gray-4); border-radius: 8px; padding: 1rem 1.25rem 0.75rem; margin: 1rem 0; background: var(--sl-color-gray-6);">
+  <small style="color: var(--sl-color-gray-3); display: block; margin-bottom: 0.5rem;">Sample to copy</small>
+  <table>
+    <tr><th>Name</th><th>Age</th></tr>
+    <tr><td>Alice</td><td>30</td></tr>
+    <tr><td>Bob</td><td>25</td></tr>
+  </table>
+</div>
+
+Result:
 ```markdown
 | Name | Age |
 | --- | --- |
 | Alice | 30 |
+| Bob | 25 |
 ```
+
+### CSV Data
+
+Try copying the comma-separated data below and pasting it into Bokuchi:
+
+```
+Name,Age,City
+Alice,30,Tokyo
+Bob,25,Osaka
+```
+
+Result:
+```markdown
+| Name | Age | City |
+| --- | --- | --- |
+| Alice | 30 | Tokyo |
+| Bob | 25 | Osaka |
+```
+
+### TSV Data
+
+When you copy from Excel or Google Sheets, data is pasted in tab-separated (TSV) format. TSV data is also converted to Markdown tables.
 
 <Aside>
 The confirm mode is recommended — it shows you a preview of the converted table so you can verify it looks correct before inserting it.

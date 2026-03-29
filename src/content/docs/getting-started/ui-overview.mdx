@@ -4,10 +4,12 @@ description: Learn the name and purpose of each part of the Bokuchi interface.
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import imgAnnotated from '../../../assets/images/ui-overview-annotated-01.png';
+import imgViewModes from '../../../assets/images/ui-overview-view-modes-01.png';
 
 This page explains each part of the Bokuchi window so you know where everything is.
 
-{/* TODO: Add annotated screenshot */}
+<img src={imgAnnotated.src} alt="Bokuchi UI with labeled areas: Tab Bar, Editor, Preview, Toolbar, Status Bar" width="700" />
 
 ## Main Areas
 
@@ -70,6 +72,8 @@ Bokuchi offers three view modes:
 | **Preview Only** | Full-width preview, no editor | Ctrl+Shift+3 |
 
 You can also cycle through these modes with **Ctrl+Shift+V**.
+
+<img src={imgViewModes.src} alt="Three view modes: Edit Mode, Preview Mode, and Split View" width="700" />
 
 <Aside>
 The split view is the default and recommended mode for most users — you can write and see the result at the same time.

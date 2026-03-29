@@ -4,6 +4,7 @@ description: Learn the essential Markdown syntax you can use in Bokuchi.
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import imgTextEffect from '../../../assets/images/guides/text-effect-preview-01.png';
 
 Markdown is a simple way to format text using special characters. This page covers all the basics you need to know.
 
@@ -142,6 +143,69 @@ Create a divider line with three or more dashes:
 ```markdown
 ---
 ```
+
+## Math Expressions (KaTeX)
+
+When KaTeX is enabled in [Settings](/guides/settings/) > Advanced > Rendering Extensions, you can render math expressions.
+
+**Inline math** — wrap with single dollar signs:
+
+```markdown
+The formula $E = mc^2$ is well known.
+```
+
+**Display math** — wrap with double dollar signs:
+
+```markdown
+$$
+\sum_{i=1}^{n} x_i
+$$
+```
+
+## Diagrams (Mermaid)
+
+When Mermaid is enabled in [Settings](/guides/settings/) > Advanced > Rendering Extensions, you can create diagrams using ` ```mermaid ` fenced code blocks.
+
+````markdown
+```mermaid
+graph TD
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Result A]
+    B -->|No| D[Result B]
+```
+````
+
+Mermaid supports flowcharts, sequence diagrams, class diagrams, state diagrams, and more.
+
+## Text Effects (Bokuchi Only)
+
+<Aside type="caution">
+Text effects are a Bokuchi-specific feature and are not part of standard Markdown. Content using this syntax will not render as effects in other editors or platforms.
+</Aside>
+
+Bokuchi supports special visual effects in the preview. Wrap content between `:::effectName` and `:::` markers:
+
+````markdown
+:::rainbow
+This text displays in rainbow colors.
+:::
+````
+
+Available effects:
+
+| Effect | Description |
+|--------|-------------|
+| `shake` | Text shakes back and forth |
+| `rainbow` | Text cycles through rainbow colors |
+| `glow` | Text pulses with a glow effect |
+| `bounce` | Text bounces up and down |
+| `blink` | Text blinks on and off |
+
+<img src={imgTextEffect.src} alt="Rainbow text effect displayed in the preview" width="700" />
+
+<Aside>
+Text effects are only visible in the preview — the source Markdown remains unchanged.
+</Aside>
 
 ## Next Steps
 

@@ -4,6 +4,9 @@ description: Create, preview, and save your first Markdown document in Bokuchi.
 ---
 
 import { Steps, Aside } from '@astrojs/starlight/components';
+import imgTyping from '../../../assets/images/first-document-typing-01.png';
+import imgPreview from '../../../assets/images/first-document-preview-01.png';
+import imgSave from '../../../assets/images/first-document-save-01.png';
 
 This guide walks you through creating your first document in Bokuchi — from opening the app to saving your file.
 
@@ -37,13 +40,19 @@ You don't need to memorize Markdown syntax. Bokuchi has a [toolbar](/guides/mark
    - **Bold item**
    ```
 
+   <img src={imgTyping.src} alt="Typing Markdown in the editor" width="700" />
+
 3. **Check the preview**
 
    Look at the right panel. Your text appears formatted — the heading is large, the list has bullet points, and the bold text stands out.
 
+   <img src={imgPreview.src} alt="Editor and preview side by side" width="700" />
+
 4. **Save your document**
 
    Press **Cmd+S** (macOS) or **Ctrl+S** (Windows/Linux). A save dialog appears. Choose a location, give your file a name (e.g., `my-first-doc.md`), and click **Save**.
+
+   <img src={imgSave.src} alt="Save dialog" width="700" />
 </Steps>
 
 ## What Happened?

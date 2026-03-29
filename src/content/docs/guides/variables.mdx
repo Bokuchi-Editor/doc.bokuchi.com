@@ -4,6 +4,8 @@ description: Use Bokuchi's variable system to reuse text across your documents.
 ---
 
 import { Steps, Aside } from '@astrojs/starlight/components';
+import imgSettings from '../../../assets/images/guides/variables-global-settings-01.png';
+import imgPreview from '../../../assets/images/guides/variables-preview-01.png';
 
 Variables let you define a value once and use it in multiple places. When the document is rendered, the variable placeholder is replaced with the actual value.
 
@@ -35,6 +37,8 @@ Global variables are available in all files. They are managed in the settings pa
 3. Add a variable name and value, then click **Add**
 </Steps>
 
+<img src={imgSettings.src} alt="Settings panel showing the Global Variables tab" width="700" />
+
 ### Use Cases
 
 - Company name, department name
@@ -42,6 +46,8 @@ Global variables are available in all files. They are managed in the settings pa
 - Common URLs or paths
 
 ## File-Local Variables
+
+<img src={imgPreview.src} alt="Preview showing variables expanded to their actual values" width="700" />
 
 You can define variables that apply only to the current file using an HTML comment at the top of the file:
 
