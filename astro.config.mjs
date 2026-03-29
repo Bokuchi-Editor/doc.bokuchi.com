@@ -14,6 +14,28 @@ export default defineConfig({
 				replacesTitle: false,
 			},
 			favicon: '/bokuchi-icon.png',
+			head: [
+				{
+					tag: 'meta',
+					attrs: { property: 'og:image', content: 'https://doc.bokuchi.com/og-image.png' },
+				},
+				{
+					tag: 'meta',
+					attrs: { property: 'og:image:width', content: '1200' },
+				},
+				{
+					tag: 'meta',
+					attrs: { property: 'og:image:height', content: '630' },
+				},
+				{
+					tag: 'meta',
+					attrs: { name: 'twitter:card', content: 'summary_large_image' },
+				},
+				{
+					tag: 'meta',
+					attrs: { name: 'twitter:image', content: 'https://doc.bokuchi.com/og-image.png' },
+				},
+			],
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/Bokuchi-Editor/bokuchi' },
 			],
