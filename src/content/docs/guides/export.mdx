@@ -15,7 +15,7 @@ The exported HTML file includes:
 
 - **Full styling** — The rendered Markdown looks the same as in Bokuchi's preview
 - **Syntax highlighting** — Code blocks retain their color highlighting
-- **Embedded images** — Local images referenced with relative paths are embedded as data URIs, so the HTML file is self-contained
+- **Image references** — Images are kept as relative paths. Place image files in the same folder structure alongside the exported HTML
 - **Expanded variables** — All [variables](/guides/variables/) are replaced with their actual values
 - **Math and diagrams** — KaTeX math expressions and Mermaid diagrams are rendered in the exported file
 
@@ -31,7 +31,7 @@ The exported HTML file includes:
 <img src={imgExport.src} alt="Exported HTML file displayed in a web browser" width="700" />
 
 <Aside>
-The exported HTML file is self-contained — you can send it to anyone, and they can open it in a web browser without needing Bokuchi or any other software.
+The exported HTML file can be opened in any web browser without Bokuchi. If your document includes images, share the image files alongside the HTML in the same relative path structure.
 </Aside>
 
 ## Other Export Options
