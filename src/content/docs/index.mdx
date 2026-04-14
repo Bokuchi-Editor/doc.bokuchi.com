@@ -17,7 +17,18 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
+import imgEditor from '../../assets/images/guides/editor-split-view-01.png';
+import imgKatex from '../../assets/images/guides/katex-preview-01.png';
+import imgMermaid from '../../assets/images/guides/mermaid-preview-01.png';
+
+<div class="badges">
+  <a href="https://github.com/Bokuchi-Editor/bokuchi/releases/latest"><img src="https://img.shields.io/github/v/release/Bokuchi-Editor/bokuchi?style=flat-square&label=Latest%20Release" alt="Latest Release" /></a>
+  <a href="https://github.com/Bokuchi-Editor/bokuchi"><img src="https://img.shields.io/github/stars/Bokuchi-Editor/bokuchi?style=flat-square" alt="GitHub Stars" /></a>
+  <a href="https://github.com/Bokuchi-Editor/bokuchi/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Bokuchi-Editor/bokuchi?style=flat-square" alt="License" /></a>
+  <a href="/reference/system-requirements/"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-blue?style=flat-square" alt="Platforms" /></a>
+  <a href="https://github.com/Bokuchi-Editor/bokuchi/releases"><img src="https://img.shields.io/github/downloads/Bokuchi-Editor/bokuchi/total?style=flat-square&label=Downloads" alt="Downloads" /></a>
+</div>
 
 ## Why Bokuchi?
 
@@ -35,3 +46,51 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     Variables, table conversion, folder explorer, outline panel, KaTeX math, Mermaid diagrams, 5 themes, 14 UI languages, and more — all built in.
   </Card>
 </CardGrid>
+
+---
+
+## See It in Action
+
+<div class="screenshot-showcase">
+  <img src={imgEditor.src} alt="Bokuchi editor with split view — write Markdown on the left, see the rendered result on the right" />
+</div>
+
+Write Markdown on the left, see the rendered result on the right — in real time. Bokuchi's clean split-view interface lets you focus on your content.
+
+### Rich Content Support
+
+<div class="feature-grid">
+  <div class="feature-item">
+    <div class="screenshot-showcase">
+      <img src={imgKatex.src} alt="KaTeX math rendering in Bokuchi" />
+    </div>
+    <p><strong>KaTeX Math</strong> — Write LaTeX equations and see them rendered in real time.</p>
+  </div>
+  <div class="feature-item">
+    <div class="screenshot-showcase">
+      <img src={imgMermaid.src} alt="Mermaid diagram rendering in Bokuchi" />
+    </div>
+    <p><strong>Mermaid Diagrams</strong> — Create flowcharts, sequence diagrams, and more.</p>
+  </div>
+</div>
+
+---
+
+## 14 Languages, One Editor
+
+Bokuchi's interface is available in 14 languages — no plugins required.
+
+<div class="language-list">
+  English · 日本語 · 中文 (简体) · 中文 (繁體) · Español · हिन्दी · Русский · 한국어 · Português (Brasil) · العربية · Français · Deutsch · Bahasa Indonesia · Tiếng Việt
+</div>
+
+---
+
+## Get Bokuchi
+
+<div class="cta-section">
+  <p>Free and open source. No account, no cloud, no tracking.</p>
+  <LinkButton href="https://github.com/Bokuchi-Editor/bokuchi/releases/latest" variant="primary" icon="external">Download Bokuchi</LinkButton>
+  &nbsp;&nbsp;
+  <LinkButton href="/getting-started/installation/" icon="right-arrow">Installation Guide</LinkButton>
+</div>

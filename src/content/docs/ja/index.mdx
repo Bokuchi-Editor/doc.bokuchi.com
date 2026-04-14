@@ -17,7 +17,18 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Card, CardGrid, LinkButton } from "@astrojs/starlight/components";
+import imgEditor from '../../../assets/images/guides/editor-split-view-01.png';
+import imgKatex from '../../../assets/images/guides/katex-preview-01.png';
+import imgMermaid from '../../../assets/images/guides/mermaid-preview-01.png';
+
+<div class="badges">
+  <a href="https://github.com/Bokuchi-Editor/bokuchi/releases/latest"><img src="https://img.shields.io/github/v/release/Bokuchi-Editor/bokuchi?style=flat-square&label=Latest%20Release" alt="Latest Release" /></a>
+  <a href="https://github.com/Bokuchi-Editor/bokuchi"><img src="https://img.shields.io/github/stars/Bokuchi-Editor/bokuchi?style=flat-square" alt="GitHub Stars" /></a>
+  <a href="https://github.com/Bokuchi-Editor/bokuchi/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Bokuchi-Editor/bokuchi?style=flat-square" alt="License" /></a>
+  <a href="/ja/reference/system-requirements/"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-blue?style=flat-square" alt="対応OS" /></a>
+  <a href="https://github.com/Bokuchi-Editor/bokuchi/releases"><img src="https://img.shields.io/github/downloads/Bokuchi-Editor/bokuchi/total?style=flat-square&label=Downloads" alt="ダウンロード数" /></a>
+</div>
 
 ## Bokuchi の特長
 
@@ -36,3 +47,51 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
     変数システム、テーブル変換、フォルダツリー、アウトラインパネル、KaTeX 数式、Mermaid 図表、5種類のテーマ、14言語のUI対応など。
   </Card>
 </CardGrid>
+
+---
+
+## 実際の画面
+
+<div class="screenshot-showcase">
+  <img src={imgEditor.src} alt="Bokuchi のスプリットビュー — 左側で Markdown を書き、右側でリアルタイムにプレビュー" />
+</div>
+
+左側で Markdown を記述し、右側にリアルタイムでプレビューが表示されます。シンプルで見やすいスプリットビューで、執筆に集中できます。
+
+### リッチコンテンツ対応
+
+<div class="feature-grid">
+  <div class="feature-item">
+    <div class="screenshot-showcase">
+      <img src={imgKatex.src} alt="Bokuchi での KaTeX 数式レンダリング" />
+    </div>
+    <p><strong>KaTeX 数式</strong> — LaTeX 記法で数式を記述すると、プレビューにリアルタイム表示されます。</p>
+  </div>
+  <div class="feature-item">
+    <div class="screenshot-showcase">
+      <img src={imgMermaid.src} alt="Bokuchi での Mermaid 図表レンダリング" />
+    </div>
+    <p><strong>Mermaid 図表</strong> — フローチャートやシーケンス図などを Mermaid 記法で作成できます。</p>
+  </div>
+</div>
+
+---
+
+## 14言語対応
+
+Bokuchi のUIは 14 の言語に対応しています。プラグイン不要で切り替え可能です。
+
+<div class="language-list">
+  English · 日本語 · 中文 (简体) · 中文 (繁體) · Español · हिन्दी · Русский · 한국어 · Português (Brasil) · العربية · Français · Deutsch · Bahasa Indonesia · Tiếng Việt
+</div>
+
+---
+
+## Bokuchi を使ってみる
+
+<div class="cta-section">
+  <p>無料・オープンソース。アカウント登録不要、クラウド不要、トラッキングなし。</p>
+  <LinkButton href="https://github.com/Bokuchi-Editor/bokuchi/releases/latest" variant="primary" icon="external">ダウンロード</LinkButton>
+  &nbsp;&nbsp;
+  <LinkButton href="/ja/getting-started/installation/" icon="right-arrow">インストールガイド</LinkButton>
+</div>

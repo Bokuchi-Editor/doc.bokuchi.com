@@ -7,3 +7,66 @@
 	--sl-color-accent: #29335c;
 	--sl-color-blue-low: #cdddf4;
 }
+
+/* ── Top page: Badges ── */
+.badges {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.4rem;
+	margin: -0.5rem 0 2rem;
+}
+.badges img {
+	height: 20px;
+}
+
+/* ── Top page: Screenshot showcase ── */
+.screenshot-showcase {
+	text-align: center;
+	margin: 1.5rem 0;
+}
+.screenshot-showcase img {
+	border-radius: 8px;
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+	max-width: 100%;
+}
+:root[data-theme='light'] .screenshot-showcase img {
+	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ── Top page: Feature grid (2-col) ── */
+.feature-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.5rem;
+	margin: 1.5rem 0;
+}
+@media (max-width: 720px) {
+	.feature-grid {
+		grid-template-columns: 1fr;
+	}
+}
+.feature-item p {
+	margin: 0.5rem 0 0;
+	font-size: 0.95rem;
+	color: var(--sl-color-gray-2);
+}
+
+/* ── Top page: Language list ── */
+.language-list {
+	text-align: center;
+	font-size: 1.05rem;
+	line-height: 2;
+	color: var(--sl-color-gray-2);
+}
+
+/* ── Top page: Bottom CTA ── */
+.cta-section {
+	text-align: center;
+	margin: 1.5rem 0 0.5rem;
+}
+.cta-section p {
+	font-size: 1.05rem;
+	color: var(--sl-color-gray-2);
+	margin-bottom: 1.25rem;
+}
