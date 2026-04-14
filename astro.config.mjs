@@ -16,6 +16,14 @@ export default defineConfig({
 			favicon: '/bokuchi-icon.png',
 			head: [
 				{
+					tag: 'script',
+					attrs: { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-CGY35PZE7V' },
+				},
+				{
+					tag: 'script',
+					content: "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CGY35PZE7V');",
+				},
+				{
 					tag: 'meta',
 					attrs: { property: 'og:image', content: 'https://doc.bokuchi.com/og-image.png' },
 				},
@@ -105,6 +113,13 @@ export default defineConfig({
 					translations: { ja: '更新履歴' },
 					items: [
 						{ label: 'Changelog', slug: 'changelog', translations: { ja: '更新履歴' } },
+					],
+				},
+				{
+					label: 'Legal',
+					translations: { ja: '法的情報' },
+					items: [
+						{ label: 'Privacy Policy', slug: 'privacy-policy', translations: { ja: 'プライバシーポリシー' } },
 					],
 				},
 			],
