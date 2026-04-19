@@ -26,6 +26,42 @@ Bokuchi supports multi-tab editing, allowing you to work with multiple files at 
 
 Drag and drop tabs to rearrange their order.
 
+## Context Menu
+
+Right-click any tab to open the context menu with these options:
+
+| Action | Description |
+|--------|-------------|
+| Rename | Rename the file or tab title |
+| Copy File Path | Copy the full file path to clipboard |
+| Copy File Name | Copy just the filename to clipboard |
+| Pin Tab / Unpin Tab | Toggle pin status |
+| Close Tab | Close this tab |
+| Close Other Tabs | Close all tabs except this one |
+| Close Tabs to the Right | Close all tabs to the right (horizontal) or below (vertical) |
+| Close All Tabs | Close all tabs |
+
+## Tab Pinning
+
+Pin important tabs to protect them from being closed by bulk close actions (Close Other, Close to the Right, Close All).
+
+- **Double-click** a tab or use the context menu to pin/unpin
+- Pinned tabs show a pin icon instead of the close button
+- Pinned tabs have a colored top border for easy identification
+
+## Tab Rename
+
+Rename tabs directly from the context menu:
+
+- **Saved files** — The actual file on disk is renamed
+- **Unsaved tabs** — Only the tab title is changed
+
+A dialog appears where you can type the new name. Press Enter or click the confirmation button to apply.
+
+## Unsaved Tab Title
+
+Unsaved tabs automatically display the text from the first line as the tab title. If the first line is empty, the title shows "Untitled". Long titles are truncated with an ellipsis.
+
 ## Unsaved Changes Indicator
 
 A tab with unsaved changes shows a badge or dot indicator. When you try to close a tab with unsaved changes, Bokuchi will ask if you want to save first.
@@ -42,6 +78,10 @@ Bokuchi offers two tab layouts:
 <img src={imgVertical.src} alt="Vertical tab layout" width="700" />
 
 Switch between layouts in [Settings](/guides/settings/) > Interface > Tab Layout.
+
+### Close Button Position
+
+You can choose whether the close button (or pin icon for pinned tabs) appears on the left or right side of each tab. Change this in [Settings](/guides/settings/) > Interface > Tab Close Button Position.
 
 <Aside>
 When using vertical tabs, the tab list can be combined with the [folder tree](/guides/folder-tree/) in a merged sidebar for a more compact layout.

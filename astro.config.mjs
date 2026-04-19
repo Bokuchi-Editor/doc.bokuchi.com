@@ -79,6 +79,7 @@ export default defineConfig({
 						{ label: 'File Operations', slug: 'guides/file-operations', translations: { ja: 'ファイル操作' } },
 						{ label: 'Tabs', slug: 'guides/tabs', translations: { ja: 'タブ管理' } },
 						{ label: 'Editor & Preview', slug: 'guides/editor-and-preview', translations: { ja: 'エディタとプレビュー' } },
+						{ label: 'Marp Presentations', slug: 'guides/marp', translations: { ja: 'Marp プレゼンテーション' } },
 						{ label: 'Search & Replace', slug: 'guides/search-and-replace', translations: { ja: '検索と置換' } },
 						{ label: 'Markdown Toolbar', slug: 'guides/markdown-toolbar', translations: { ja: 'Markdown ツールバー' } },
 						{ label: 'Outline Panel', slug: 'guides/outline', translations: { ja: 'アウトライン' } },

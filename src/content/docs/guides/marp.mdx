@@ -1,0 +1,109 @@
+---
+title: Marp Presentations
+description: Create slide presentations from Markdown using the Marp feature in Bokuchi.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Bokuchi can render Markdown files as slide presentations using [Marp](https://marp.app/). Write your slides in Markdown and preview them as a presentation — no separate presentation software needed.
+
+## Enabling Marp
+
+Marp is disabled by default. To enable it:
+
+1. Open [Settings](/guides/settings/) with **Cmd+,** (macOS) or **Ctrl+,** (Windows/Linux)
+2. Go to **Advanced** > **Rendering Extensions**
+3. Turn on **Marp (Presentations)**
+
+<Aside>
+When Marp is disabled, its library is not loaded, so there is no impact on editor performance.
+</Aside>
+
+## Writing a Presentation
+
+Add `marp: true` to the YAML front-matter at the top of your Markdown file. Separate slides with `---` (three hyphens on their own line).
+
+```markdown
+---
+marp: true
+---
+
+# Slide 1
+
+Welcome to my presentation!
+
+---
+
+# Slide 2
+
+- Point A
+- Point B
+- Point C
+
+---
+
+# Slide 3
+
+Thank you!
+```
+
+When Bokuchi detects `marp: true` in the front-matter, the preview automatically switches to presentation mode.
+
+## View Modes
+
+Marp presentations behave differently depending on the current view mode:
+
+### Split View (Ctrl+Shift+1)
+
+All slides are displayed vertically in the preview pane. The editor and slides scroll together, so you can see which slide you are editing.
+
+### Preview Only (Ctrl+Shift+3)
+
+Slides are displayed one at a time with navigation controls:
+
+| Action | Shortcut |
+|--------|----------|
+| Next slide | Right arrow / Down arrow / Space |
+| Previous slide | Left arrow / Up arrow |
+| Exit fullscreen | Escape |
+
+A slide counter at the top shows your current position (e.g., "Slide 2 of 10").
+
+### Fullscreen
+
+Click the fullscreen button in the preview header to display the current slide in a 16:9 aspect ratio on a dark background. Press **Escape** to exit fullscreen.
+
+### Thumbnail Grid
+
+Click the grid button in the preview header to see all slides at a glance. Click any thumbnail to jump to that slide.
+
+## Themes
+
+Marp supports built-in themes. Specify a theme in the front-matter:
+
+```markdown
+---
+marp: true
+theme: gaia
+---
+```
+
+Available Marp themes include `default`, `gaia`, and `uncover`.
+
+## Images
+
+Relative image paths in your Markdown work inside Marp presentations. Bokuchi automatically resolves them so that images display correctly in the preview.
+
+```markdown
+---
+marp: true
+---
+
+![Diagram](./images/diagram.png)
+```
+
+## Next Steps
+
+- [Editor & Preview](/guides/editor-and-preview/) — Learn about view modes and synchronized scrolling
+- [Export](/guides/export/) — Export your documents
+- [Settings](/guides/settings/) — Configure rendering extensions
