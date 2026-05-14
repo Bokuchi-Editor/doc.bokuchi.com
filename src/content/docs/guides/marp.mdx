@@ -4,8 +4,16 @@ description: Create slide presentations from Markdown using the Marp feature in 
 ---
 
 import { Aside } from '@astrojs/starlight/components';
+import imgSplitView from '../../../assets/images/guides/marp-split-view-01.png';
+import imgEnableSettings from '../../../assets/images/guides/marp-enable-settings-01.png';
+import imgPreviewOnly from '../../../assets/images/guides/marp-preview-only-01.png';
+import imgFullscreen from '../../../assets/images/guides/marp-fullscreen-01.png';
+import imgThumbnailGrid from '../../../assets/images/guides/marp-thumbnail-grid-01.png';
+import imgThemeGaia from '../../../assets/images/guides/marp-theme-gaia-01.png';
 
 Bokuchi can render Markdown files as slide presentations using [Marp](https://marp.app/). Write your slides in Markdown and preview them as a presentation — no separate presentation software needed.
+
+<img src={imgSplitView.src} alt="A Marp presentation in Bokuchi — Markdown in the editor on the left, rendered slides in the center, and the outline panel on the right" width="700" />
 
 ## Enabling Marp
 
@@ -18,6 +26,8 @@ Marp is disabled by default. To enable it:
 <Aside>
 When Marp is disabled, its library is not loaded, so there is no impact on editor performance.
 </Aside>
+
+<img src={imgEnableSettings.src} alt="The Bokuchi Settings screen with the Marp (Presentations) toggle turned on under Rendering Extensions" width="700" />
 
 ## Writing a Presentation
 
@@ -69,13 +79,19 @@ Slides are displayed one at a time with navigation controls:
 
 A slide counter at the top shows your current position (e.g., "Slide 2 of 10").
 
+<img src={imgPreviewOnly.src} alt="Preview Only mode showing a single Marp slide with navigation arrows and a slide counter" width="700" />
+
 ### Fullscreen
 
 Click the fullscreen button in the preview header to display the current slide in a 16:9 aspect ratio on a dark background. Press **Escape** to exit fullscreen.
 
+<img src={imgFullscreen.src} alt="A Marp slide displayed fullscreen in 16:9 on a dark background with a slide counter" width="700" />
+
 ### Thumbnail Grid
 
 Click the grid button in the preview header to see all slides at a glance. Click any thumbnail to jump to that slide.
+
+<img src={imgThumbnailGrid.src} alt="Thumbnail grid showing all slides of a Marp presentation at a glance" width="700" />
 
 ## Themes
 
@@ -89,6 +105,8 @@ theme: gaia
 ```
 
 Available Marp themes include `default`, `gaia`, and `uncover`.
+
+<img src={imgThemeGaia.src} alt="A Marp presentation rendered with the gaia theme, set via theme: gaia in the front-matter" width="700" />
 
 ## Images
 
