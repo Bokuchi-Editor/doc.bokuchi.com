@@ -3,6 +3,32 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v0.8.4 — May 21, 2026
+
+### Changes
+- Closing multiple tabs at once now prompts you to save each tab with unsaved changes, instead of silently skipping them
+- The view-mode cycle shortcut moved to **Cmd+Shift+D** / **Ctrl+Shift+D** — it previously conflicted with another shortcut on Windows
+- Dependency updates (KaTeX, Tauri, and others)
+
+### Bug Fixes
+- Fixed the Marp continuous-mode preview scrollbar jumping back to the first slide on every keystroke — your scroll position is now preserved while you edit
+
+---
+
+## v0.8.3 — May 18, 2026
+
+### New Features
+- **Table column width** — Choose how Markdown table columns are sized in both the preview and exported HTML: equal widths, fit-to-content with wrapping, or fit-to-content with horizontal scroll (see [Settings](/guides/settings/))
+
+### Improvements
+- Brightened the Darcula theme's code block background so syntax-highlighted code is easier to read
+- Dependency updates (Mermaid, React, MUI icons, and others)
+
+### Bug Fixes
+- Fixed Mermaid code blocks not rendering as diagrams inside Marp slides — they now render correctly instead of appearing as raw code
+
+---
+
 ## v0.8.2 — May 7, 2026
 
 ### New Features
