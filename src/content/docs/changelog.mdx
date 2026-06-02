@@ -3,6 +3,20 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v0.8.5 — June 1, 2026
+
+### Improvements
+- Improved stability — if variable or Markdown processing runs into a problem, Bokuchi now reports an error gracefully instead of crashing
+- Dependency updates (KaTeX pinned to a stable line, and others)
+
+### Bug Fixes
+- Fixed math formulas (KaTeX) sometimes breaking the preview or rendering blank — including formulas combined with strikethrough text, and absolute-value expressions like `$|x - y|$` inside tables
+- Fixed a crash that could occur while typing a variable comment (`<!-- @var -->`)
+- Fixed `marp: true` text shown inside a code block or in body text triggering Marp mode — front-matter is now only recognized at the very start of the document
+- Fixed Mermaid leaving stray empty elements at the bottom of the window after rendering
+
+---
+
 ## v0.8.4 — May 21, 2026
 
 ### Changes
