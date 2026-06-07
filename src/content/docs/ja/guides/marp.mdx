@@ -10,6 +10,7 @@ import imgPreviewOnly from '../../../../assets/images/guides/marp-preview-only-0
 import imgFullscreen from '../../../../assets/images/guides/marp-fullscreen-01.png';
 import imgThumbnailGrid from '../../../../assets/images/guides/marp-thumbnail-grid-01.png';
 import imgThemeGaia from '../../../../assets/images/guides/marp-theme-gaia-01.png';
+import imgThemeFolder from '../../../../assets/images/guides/marp-theme-folder-01.png';
 
 Bokuchi は [Marp](https://marp.app/) を使い、Markdown ファイルをスライドプレゼンテーションとしてレンダリングできます。Markdown でスライドを書き、プレゼンテーションとしてプレビューできます。別途プレゼンテーションソフトは不要です。
 
@@ -107,6 +108,40 @@ theme: gaia
 利用可能な Marp テーマは `default`、`gaia`、`uncover` などがあります。
 
 <img src={imgThemeGaia.src} alt="gaia テーマでレンダリングされた Marp プレゼンテーション — フロントマターの theme: gaia で指定" width="700" />
+
+## カスタムテーマ
+
+内蔵テーマに加えて、CSS ファイルを置いたフォルダから独自の Marp テーマを登録できます。
+
+1. [設定](/ja/guides/settings/) > **詳細** を開きます（Marp を有効にしておく必要があります）。
+2. **Marp テーマフォルダ** で **フォルダを選択…** をクリックし、`.css` テーマファイルが入ったフォルダを選びます。
+3. Bokuchi がフォルダを読み取り、見つかったテーマを一覧表示します。ファイルを追加・変更したら **再読み込み**、フォルダを外すには **クリア** を使います。
+
+各 CSS ファイルは、先頭にテーマ名を記した `@theme` ヘッダーがあれば、選択できるテーマになります。
+
+```css
+/* @theme my-theme */
+
+section {
+  background: #fdf6e3;
+  color: #333;
+}
+```
+
+あとは内蔵テーマと同じように、スライドのフロントマターでその名前を指定します。
+
+```markdown
+---
+marp: true
+theme: my-theme
+---
+```
+
+<img src={imgThemeFolder.src} alt="設定 > 詳細 の「Marp テーマフォルダ」カード。フォルダを選択／再読み込み／クリアのボタンと、検出されたテーマ名の一覧が見える" width="700" />
+
+<Aside>
+`@theme` ヘッダーがないファイルは無視されます。Bokuchi はそれらを別に一覧表示するので、なぜ取り込まれなかったかが分かります。
+</Aside>
 
 ## 画像
 

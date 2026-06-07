@@ -20,6 +20,7 @@ Open the settings panel with **Cmd+,** (macOS) or **Ctrl+,** (Windows/Linux). Yo
 | Tab size | Number of spaces per tab | 2 |
 | Word wrap | Wrap long lines to fit the editor width | On |
 | Minimap | Show a minimap overview of the document | On |
+| Formatting bar | Show the [Markdown formatting toolbar](/guides/markdown-toolbar/) above the editor | On |
 
 <img src={imgEditor.src} alt="Settings panel — Editor tab" width="700" />
 
@@ -27,7 +28,7 @@ Open the settings panel with **Cmd+,** (macOS) or **Ctrl+,** (Windows/Linux). Yo
 
 | Setting | Description | Default |
 |---------|-------------|---------|
-| Theme | Choose from 5 built-in themes | Default |
+| Theme | Choose from 9 built-in themes | Default |
 
 See [Themes](/guides/themes/) for details on each theme.
 
@@ -38,8 +39,9 @@ See [Themes](/guides/themes/) for details on each theme.
 | Language | UI language (14 languages available) | English |
 | Tab layout | Horizontal or vertical tabs | Horizontal |
 | Tab close button position | Show close/pin icon on left or right of tab | Right |
+| New tab button position | Where the new tab (+) button sits in vertical tabs: top or bottom | Top |
 | Zoom level | Interface zoom | 100% |
-| Scroll sync | Editor-to-preview, bidirectional, or off | Editor to Preview |
+| Scroll sync | Editor-to-preview, bidirectional, or off | Bidirectional |
 | Outline display mode | Persistent or overlay | Persistent |
 | Explorer display mode | Persistent, overlay, or off | Off |
 | File filter | Show Markdown files only or all files | Markdown only |
@@ -64,6 +66,8 @@ See [Themes](/guides/themes/) for details on each theme.
 | Marp (Presentations) | Render Markdown with `marp: true` front-matter as slide presentations | Off |
 
 Disabled features do not load their libraries, keeping the editor lightweight.
+
+When Marp is enabled, a **Marp Theme Folder** option also appears here, letting you register custom slide themes from a folder of CSS files. See [Custom Themes](/guides/marp/#custom-themes).
 
 <Aside>
 If you open a file that uses KaTeX, Mermaid, or Marp content while the matching option above is off, Bokuchi shows a one-time notice pointing to the relevant setting — so it's easy to spot when math, diagrams, or slides aren't rendering simply because the feature is disabled.
@@ -90,6 +94,6 @@ Resetting settings will not delete your global variables. Variable management is
 
 ## Next Steps
 
-- [Themes](/guides/themes/) — Preview all 5 themes
+- [Themes](/guides/themes/) — Preview all 9 themes
 - [Variables](/guides/variables/) — Set up reusable text variables
 - [Keyboard shortcuts](/reference/keyboard-shortcuts/) — Full shortcut reference

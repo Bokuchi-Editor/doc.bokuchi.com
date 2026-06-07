@@ -20,6 +20,7 @@ import imgInterface from '../../../../assets/images/guides/settings-interface-01
 | タブサイズ | タブのスペース数 | 2 |
 | 折り返し | 長い行をエディタ幅で折り返す | ON |
 | ミニマップ | ドキュメント全体の縮小表示 | ON |
+| 整形ツールバー | エディタ上部に [Markdown 整形ツールバー](/ja/guides/markdown-toolbar/)を表示 | ON |
 
 <img src={imgEditor.src} alt="設定画面 — エディタタブ" width="700" />
 
@@ -27,7 +28,7 @@ import imgInterface from '../../../../assets/images/guides/settings-interface-01
 
 | 設定 | 説明 | デフォルト |
 |------|------|------------|
-| テーマ | 5種類の内蔵テーマから選択 | Default |
+| テーマ | 9種類の内蔵テーマから選択 | Default |
 
 各テーマの詳細は[テーマの変更](/ja/guides/themes/)をご覧ください。
 
@@ -38,8 +39,9 @@ import imgInterface from '../../../../assets/images/guides/settings-interface-01
 | 言語 | UI言語（14言語対応） | English |
 | タブレイアウト | 水平タブ / 垂直タブ | 水平 |
 | タブ閉じるボタン位置 | 閉じる/ピンアイコンをタブの左側・右側に表示 | 右 |
+| 新規タブボタンの位置 | 垂直タブでの新規タブ（＋）ボタンの位置: 上部 / 下部 | 上部 |
 | ズームレベル | 画面のズーム | 100% |
-| スクロール同期 | エディタ→プレビュー / 双方向 / オフ | エディタ→プレビュー |
+| スクロール同期 | エディタ→プレビュー / 双方向 / オフ | 双方向 |
 | アウトライン表示モード | 常時表示 / オーバーレイ | 常時表示 |
 | エクスプローラー表示モード | 常時表示 / オーバーレイ / OFF | OFF |
 | ファイルフィルター | Markdown のみ / すべてのファイル | Markdown のみ |
@@ -64,6 +66,8 @@ import imgInterface from '../../../../assets/images/guides/settings-interface-01
 | Marp（プレゼンテーション） | `marp: true` フロントマターを持つ Markdown をスライドとしてレンダリング | OFF |
 
 無効化した機能はライブラリを読み込まないため、エディタの軽量性が維持されます。
+
+Marp を有効にすると、ここに **Marp テーマフォルダ** の項目も表示され、CSS ファイルのフォルダからスライド用のカスタムテーマを登録できます。詳しくは[カスタムテーマ](/ja/guides/marp/#カスタムテーマ)をご覧ください。
 
 <Aside>
 KaTeX・Mermaid・Marp の内容を含むファイルを、対応する設定がオフのまま開いた場合は、初回限定でお知らせが表示され、対応する設定への動線が案内されます。「数式や図、スライドが表示されない」原因が機能オフによるものだと一目で分かります。
@@ -90,6 +94,6 @@ KaTeX・Mermaid・Marp の内容を含むファイルを、対応する設定が
 
 ## 次のステップ
 
-- [テーマの変更](/ja/guides/themes/) — 5種類のテーマをプレビュー
+- [テーマの変更](/ja/guides/themes/) — 9種類のテーマをプレビュー
 - [変数システム](/ja/guides/variables/) — テキストの再利用を設定する
 - [キーボードショートカット一覧](/ja/reference/keyboard-shortcuts/) — 全ショートカットを確認する

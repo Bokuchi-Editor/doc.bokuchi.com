@@ -3,6 +3,27 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v0.9.0 — June 7, 2026
+
+### New Features
+- **Visual table editing** — Edit Markdown tables directly, without touching the raw syntax. Click **Format Table** in the toolbar (or press **Cmd/Ctrl+Shift+L**) to open the table editor, where you can add or remove rows and columns, set per-column alignment, and edit cells in multi-line fields. In the preview you can also hover a table for an **Edit table** button, or double-click any cell to edit it in place. See [Table Editing](/guides/table-editing/)
+- **Focus mode (Rin / 臨)** — A distraction-free mode that hides the surrounding UI and maximizes the editing area. Toggle it from the header button, and press **Esc** to exit. See [Focus Mode](/guides/focus-mode/)
+- **Auto-hiding vertical tab bar** — When using vertical tabs, you can unpin the sidebar so it tucks away and slides out on hover (see [Tabs](/guides/tabs/))
+- **Four new themes** — Dawn, Twilight, Silk, and Ink, bringing the total to 9 (see [Themes](/guides/themes/))
+- **Custom Marp themes** — Point Bokuchi at a folder of CSS theme files and use them in your slides with the `theme:` directive (see [Marp Presentations](/guides/marp/#custom-themes))
+- **New Tab button position** — Choose where the new tab (+) button appears in the vertical tab sidebar: fixed at the top, or below the last tab
+- **Show/hide the formatting toolbar** — A new Editor setting lets you hide the Markdown formatting toolbar
+- **Quick toggles in the status bar** — Toggle Word Wrap and Auto Save right from the status bar
+
+### Changes
+- Scroll sync in split view now defaults to **Bidirectional** (was one-way) — scrolling either pane scrolls the other
+- Inline table cell editing in the preview now uses a multi-line text area instead of a single-line box
+
+### Bug Fixes
+- Fixed a bug that could cause tabs to misbehave while being dragged to reorder them
+
+---
+
 ## v0.8.5 — June 1, 2026
 
 ### Improvements

@@ -1,0 +1,45 @@
+---
+title: Focus Mode (Rin)
+description: Hide the surrounding interface and focus on writing with Bokuchi's Rin focus mode.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+import imgButton from '../../../assets/images/guides/focus-mode-button-01.png';
+
+**Rin** (臨) is Bokuchi's distraction-free focus mode. It hides everything around the editor — the header, the formatting toolbar, the tab sidebar, and the side panels — so nothing but your text remains.
+
+<img src="/images/guides/focus-mode-rin-01.gif" alt="Bokuchi entering Rin focus mode — the surrounding UI slides away, leaving a full-width editor with an Exit Rin button in the top-right corner" width="700" />
+
+## Entering Rin Mode
+
+Click the **Rin** button (the 臨 calligraphy icon) in the top toolbar.
+
+Everything around the editor slides away and the editing area expands to fill the window.
+
+<img src={imgButton.src} alt="Close-up of the app header showing the Rin (臨) button" width="700" />
+
+## Exiting Rin Mode
+
+There are two ways to leave:
+
+- Press **Esc**, or
+- Click the **Exit Rin** button in the top-right corner
+
+The exit button fades out shortly after you start typing so it stays out of your way, and reappears when you move the mouse.
+
+<Aside>
+When you leave Rin mode, Bokuchi restores your previous view mode (Split / Editor / Preview) and brings back any panels you had open.
+</Aside>
+
+## While You're in Rin Mode
+
+- A **Toggle editor width** button (just below the exit button) switches the editor between full width and a narrower, centered column — handy for comfortable line lengths when writing long-form text.
+- The formatting toolbar is hidden automatically, even if it's normally enabled. Your [setting](/guides/settings/) is restored when you exit.
+
+Rin mode is a temporary, per-session state — it is not saved between launches.
+
+## Next Steps
+
+- [Editor & Preview](/guides/editor-and-preview/) — View modes and the editing experience
+- [Settings](/guides/settings/) — Customize the editor and interface
+- [Keyboard Shortcuts](/reference/keyboard-shortcuts/) — Full shortcut reference

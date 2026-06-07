@@ -10,6 +10,7 @@ import imgPreviewOnly from '../../../assets/images/guides/marp-preview-only-01.p
 import imgFullscreen from '../../../assets/images/guides/marp-fullscreen-01.png';
 import imgThumbnailGrid from '../../../assets/images/guides/marp-thumbnail-grid-01.png';
 import imgThemeGaia from '../../../assets/images/guides/marp-theme-gaia-01.png';
+import imgThemeFolder from '../../../assets/images/guides/marp-theme-folder-01.png';
 
 Bokuchi can render Markdown files as slide presentations using [Marp](https://marp.app/). Write your slides in Markdown and preview them as a presentation — no separate presentation software needed.
 
@@ -107,6 +108,40 @@ theme: gaia
 Available Marp themes include `default`, `gaia`, and `uncover`.
 
 <img src={imgThemeGaia.src} alt="A Marp presentation rendered with the gaia theme, set via theme: gaia in the front-matter" width="700" />
+
+## Custom Themes
+
+Beyond the built-in themes, you can register your own Marp themes from a folder of CSS files.
+
+1. Open [Settings](/guides/settings/) > **Advanced** (Marp must be enabled).
+2. Under **Marp Theme Folder**, click **Choose Folder…** and select a folder containing your `.css` theme files.
+3. Bokuchi scans the folder and lists the themes it finds. Use **Reload** if you add or change files, or **Clear** to remove the folder.
+
+Each CSS file becomes a selectable theme as long as it starts with an `@theme` header naming the theme:
+
+```css
+/* @theme my-theme */
+
+section {
+  background: #fdf6e3;
+  color: #333;
+}
+```
+
+Then reference that name in your slide's front-matter, just like a built-in theme:
+
+```markdown
+---
+marp: true
+theme: my-theme
+---
+```
+
+<img src={imgThemeFolder.src} alt="The Marp Theme Folder card in Settings > Advanced, with the Choose Folder / Reload / Clear buttons and a list of detected theme names" width="700" />
+
+<Aside>
+Files without an `@theme` header are ignored — Bokuchi lists them separately so you can see why they weren't picked up.
+</Aside>
 
 ## Images
 
