@@ -3,6 +3,21 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v0.9.2 — June 10, 2026
+
+### Bug Fixes
+- Fixed Marp slides rendering at their native size and overflowing the preview — with oversized headings and content clipped on the right — in packaged (production) builds. Slides now scale to fit the pane correctly across split, slide, fullscreen, and thumbnail views
+
+---
+
+## v0.9.1 — June 9, 2026
+
+### Security
+- The Markdown preview now sanitizes embedded HTML before displaying it. Scripts, event-handler attributes (`onerror`, `onload`, …), and `javascript:` links are stripped from both the live preview and exported HTML, so a Markdown file can no longer run hidden code
+- Hardened the preview against UI-redressing attacks: a crafted file can no longer cover the app with a full-screen overlay or a fake dialog. The same protection applies to exported HTML
+
+---
+
 ## v0.9.0 — June 7, 2026
 
 ### New Features
