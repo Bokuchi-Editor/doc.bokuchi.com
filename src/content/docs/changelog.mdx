@@ -3,6 +3,22 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v0.9.3 — June 21, 2026
+
+### Improvements
+- Marp slides with many or large images now use far less memory — images load directly from disk instead of being embedded in the preview. HTML and PDF exports stay fully self-contained
+- Moved the Focus mode (Rin / 臨) control buttons and their tooltips to the left so they no longer run off the edge of the window
+
+### Bug Fixes
+- Fixed clicking a heading in the outline not scrolling the preview when in preview-only mode — it now jumps to that heading
+- Fixed Esc in Focus mode (Rin) exiting focus mode even when a dialog or the search panel was open — Esc now closes whatever is on top first, and only leaves Focus mode when nothing else is open
+- Fixed code blocks sometimes showing an incorrect or doubled background in exported HTML
+
+### Security
+- Updated dependencies to resolve known security advisories (DOMPurify, js-yaml, markdown-it, undici); `npm audit` now reports no known vulnerabilities
+
+---
+
 ## v0.9.2 — June 10, 2026
 
 ### Bug Fixes
