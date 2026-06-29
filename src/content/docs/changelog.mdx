@@ -3,6 +3,22 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v0.9.4 — June 29, 2026
+
+### New Features
+- **Outline "Off" mode** — The outline panel now has three display modes: Always visible, Overlay, and Off. The toolbar button and **Ctrl+Shift+O** switch between Off and your chosen style, and unlike the old temporary hide, the Off state is remembered after you restart Bokuchi (see [Outline Panel](/guides/outline/))
+- **Raspberry Pi (arm64 Linux) build** — A native arm64 `.deb` package is now available for Raspberry Pi OS (Bookworm). Bokuchi also detects a Raspberry Pi at startup and adjusts its renderer to avoid garbled display (see [System Requirements](/reference/system-requirements/))
+
+### Improvements
+- The editor view mode (split / editor / preview) is now remembered and restored the next time you launch Bokuchi, instead of always starting in split view. The very first launch still uses split view
+- Dependency updates (Tauri and related packages)
+
+### Bug Fixes
+- Fixed `**bold**` and `*italic*` showing as literal asterisks when a marker touched Japanese or other CJK text — for example around 「」 brackets. Asterisks inside code spans and code blocks are left untouched
+- Fixed external (`https:`) images no longer loading in the preview in packaged builds — remote images render again
+
+---
+
 ## v0.9.3 — June 21, 2026
 
 ### Improvements
