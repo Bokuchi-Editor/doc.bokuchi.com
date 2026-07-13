@@ -80,6 +80,33 @@ The editor is powered by Monaco Editor (the same editor used in VS Code) and sup
 All editor display options can be configured in [Settings](/guides/settings/) > Editor.
 </Aside>
 
+### Continuous List Input
+
+When you press **Enter** inside a list item, the next line automatically starts with the same marker — so you can keep typing without retyping `-` or `1.` each time:
+
+- Bullet lists (`-`, `*`, `+`) continue with the same bullet
+- Numbered lists (`1.`, `2.` …) continue with the next number
+- Checkboxes (`- [ ]`) continue with a fresh unchecked box
+
+Press **Enter** on an empty list item to end the list — the marker is removed and you get a blank line.
+
+You can also press **Tab** on a list item to indent it one level deeper, and **Shift+Tab** to outdent it.
+
+### Inserting Images by Drag & Drop or Paste
+
+Drop an image file onto the editor to insert a Markdown image link at that spot. While you drag, a "Drop image here" overlay shows where the image will land. You can drop several images at once.
+
+Bokuchi keeps the links relative to your document, so they keep working when you share the folder:
+
+- An image that is already inside your document's folder is linked as-is with a relative path
+- An image from somewhere else is copied into an `images` folder next to your document
+
+You can also **paste** an image — for example a screenshot — directly into the editor. It is saved into the `images` folder with a timestamped name, and the link is inserted at the cursor.
+
+<Aside>
+Save your document first. Bokuchi needs to know where the file lives to build relative image paths, so image insertion is unavailable in unsaved tabs.
+</Aside>
+
 ## Next Steps
 
 - [Markdown toolbar](/guides/markdown-toolbar/) — Format text using buttons

@@ -1,13 +1,13 @@
 ---
 title: エクスポート
-description: Markdown ドキュメントを HTML ファイルとしてエクスポートする方法を説明します。
+description: Markdown ドキュメントを HTML や PDF ファイルとしてエクスポートする方法を説明します。
 ---
 
 import { Aside } from '@astrojs/starlight/components';
 import imgExport from '../../../../assets/images/guides/export-html-01.png';
 import imgExportButton from '../../../../assets/images/guides/export-html-button-01.png';
 
-Bokuchi は Markdown ドキュメントをスタイル付き HTML ファイルとしてエクスポートできます。Web ブラウザで開いたり、他の人と共有したりするのに便利です。
+Bokuchi は Markdown ドキュメントをスタイル付き HTML ファイルとしてエクスポートできます。また、誰でも閲覧・印刷できる PDF としての書き出しにも対応しています。
 
 ## HTML エクスポート
 
@@ -22,9 +22,9 @@ Bokuchi は Markdown ドキュメントをスタイル付き HTML ファイル�
 ## エクスポートの手順
 
 1. エクスポートしたいファイルを開きます
-2. プレビューパネル右上の**ダウンロードボタン**をクリック、またはメニューからエクスポートを選択します
-3. 保存場所とファイル名を選びます
-4. `.html` ファイルが保存されます
+2. プレビューパネル右上の**ダウンロードボタン**をクリックします
+3. メニューから **HTMLでエクスポート** または **PDFでエクスポート** を選びます
+4. 保存場所とファイル名を選びます
 
 <img src={imgExportButton.src} alt="プレビューパネルヘッダーのダウンロードボタン" width="700" />
 
@@ -33,6 +33,18 @@ Bokuchi は Markdown ドキュメントをスタイル付き HTML ファイル�
 <Aside>
 エクスポートされた HTML ファイルは Bokuchi がなくても Web ブラウザで開けます。ただし画像を含むドキュメントを共有する場合は、HTML ファイルと一緒に画像ファイルも同じ相対パス構成で渡してください。
 </Aside>
+
+## PDF エクスポート
+
+**PDFでエクスポート** を選ぶと、ドキュメントが A4 サイズの PDF として保存されます。印刷したいときや、Bokuchi を使っていない人に渡したいときに便利です。
+
+PDF には HTML エクスポートと同じ内容が含まれます。シンタックスハイライト付きのコードブロック、展開済みの変数、KaTeX の数式、Mermaid の図表がそのまま出力されます。
+
+<Aside>
+PDF は現在のテーマに関わらず、常に白背景の明るい配色で出力されます。読みやすく、印刷にも適した仕上がりになります。
+</Aside>
+
+Marp プレゼンテーションには専用の PDF エクスポートがあり、1 ページに 1 スライドずつ保存されます。詳しくは [Marp プレゼンテーション](/ja/guides/marp/#pdf-エクスポート)をご覧ください。
 
 ## その他のエクスポート
 

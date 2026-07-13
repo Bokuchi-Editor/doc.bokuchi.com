@@ -109,6 +109,10 @@ Available Marp themes include `default`, `gaia`, and `uncover`.
 
 <img src={imgThemeGaia.src} alt="A Marp presentation rendered with the gaia theme, set via theme: gaia in the front-matter" width="700" />
 
+<Aside>
+The fonts used by the built-in themes are bundled with Bokuchi, so slides render with the correct fonts even without an internet connection.
+</Aside>
+
 ## Custom Themes
 
 Beyond the built-in themes, you can register your own Marp themes from a folder of CSS files.
@@ -154,6 +158,16 @@ marp: true
 
 ![Diagram](./images/diagram.png)
 ```
+
+## PDF Export
+
+You can export your presentation as a PDF — one slide per page, at the slide's own size — ready to share or present anywhere.
+
+1. Open your Marp file
+2. Click the **PDF button** in the preview header (it is also available in fullscreen)
+3. Choose the save location and file name
+
+Images and Mermaid diagrams are included in the exported PDF exactly as they appear in the preview.
 
 ## Next Steps
 

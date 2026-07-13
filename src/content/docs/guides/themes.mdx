@@ -1,8 +1,9 @@
 ---
 title: Themes
-description: Customize the look of Bokuchi with 9 built-in themes.
+description: Customize the look of Bokuchi with 9 built-in themes or your own custom themes.
 ---
 
+import { Aside } from '@astrojs/starlight/components';
 import imgDefault from '../../../assets/images/guides/themes-default-01.png';
 import imgDark from '../../../assets/images/guides/themes-dark-01.png';
 import imgPastel from '../../../assets/images/guides/themes-pastel-01.png';
@@ -13,7 +14,7 @@ import imgSilk from '../../../assets/images/guides/themes-silk-01.png';
 import imgInk from '../../../assets/images/guides/themes-ink-01.png';
 import imgDarcula from '../../../assets/images/guides/themes-darcula-01.png';
 
-Bokuchi comes with 9 built-in themes to match your preference.
+Bokuchi comes with 9 built-in themes to match your preference. You can also create your own [custom themes](#custom-themes) based on any of them.
 
 ## Available Themes
 
@@ -64,15 +65,38 @@ There are two ways to switch themes:
 
 1. Open **Settings** (Cmd+, on macOS / Ctrl+, on Windows/Linux)
 2. Go to the **Appearance** section
-3. Select your preferred theme
+3. Click a theme card to apply it. Hovering a card shows a small color preview
 
 ### From the Status Bar
 
 Click the **theme name** displayed in the status bar at the bottom of the window. This provides a quick way to cycle through themes.
 
+## Custom Themes
+
+Not quite happy with any of the built-in colors? You can create your own theme by duplicating an existing one and adjusting its colors.
+
+1. Open **Settings** > **Appearance**
+2. Click **New Theme** in the **Custom Themes** section
+3. Choose a base theme — your custom theme starts as a copy of it
+4. Adjust the colors in the editor that opens
+
+You can change 7 colors: the window background, panel background, text, secondary text, two accent colors, and the divider color. Each color has a color picker and a hex field (like `#1a2b3c`), and your changes are applied to the whole app immediately so you can see the result as you go.
+
+While editing you can also:
+
+- **Rename** the theme — the name appears in the theme list and the status bar
+- **Reset colors to base** — go back to the colors of the theme you started from
+- **Delete** the theme when you no longer need it
+
+If a text color and its background are too similar, Bokuchi shows a warning so you notice the text may become hard to read.
+
+<Aside>
+Custom themes are saved with your settings and work just like the built-in ones — you can apply them from the theme cards or cycle to them from the status bar.
+</Aside>
+
 ## Theme Persistence
 
-Your theme choice is saved automatically and will be restored the next time you open Bokuchi.
+Your theme choice — including custom themes — is saved automatically and will be restored the next time you open Bokuchi.
 
 ## Next Steps
 

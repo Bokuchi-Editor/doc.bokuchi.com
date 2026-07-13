@@ -1,13 +1,13 @@
 ---
 title: Export
-description: Export your Markdown documents as HTML files.
+description: Export your Markdown documents as HTML or PDF files.
 ---
 
 import { Aside } from '@astrojs/starlight/components';
 import imgExport from '../../../assets/images/guides/export-html-01.png';
 import imgExportButton from '../../../assets/images/guides/export-html-button-01.png';
 
-Bokuchi can export your Markdown document as a styled HTML file that you can open in any web browser or share with others.
+Bokuchi can export your Markdown document as a styled HTML file that you can open in any web browser, or as a PDF that anyone can view and print.
 
 ## HTML Export
 
@@ -22,9 +22,9 @@ The exported HTML file includes:
 ## How to Export
 
 1. Open the file you want to export
-2. Click the **download button** in the top-right corner of the preview panel, or use the export option from the menu
-3. Choose the save location and file name
-4. The `.html` file is saved
+2. Click the **download button** in the top-right corner of the preview panel
+3. Choose **Export as HTML** or **Export as PDF** from the menu
+4. Choose the save location and file name
 
 <img src={imgExportButton.src} alt="Download button in the preview panel header for quick HTML export" width="700" />
 
@@ -33,6 +33,18 @@ The exported HTML file includes:
 <Aside>
 The exported HTML file can be opened in any web browser without Bokuchi. If your document includes images, share the image files alongside the HTML in the same relative path structure.
 </Aside>
+
+## PDF Export
+
+Choosing **Export as PDF** saves your document as an A4 PDF — handy for printing or sharing with people who don't use Bokuchi.
+
+The PDF includes the same content as the HTML export: syntax-highlighted code blocks, expanded variables, KaTeX math, and Mermaid diagrams.
+
+<Aside>
+PDF output always uses light colors on a white background, regardless of your current theme, so the result stays easy to read and print.
+</Aside>
+
+Marp presentations have their own PDF export that saves one slide per page — see [Marp Presentations](/guides/marp/#pdf-export).
 
 ## Other Export Options
 

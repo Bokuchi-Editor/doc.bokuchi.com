@@ -3,6 +3,23 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v1.0.0 — July 12, 2026
+
+### New Features
+- **PDF export** — Export your document straight to PDF. Regular Markdown exports as an A4 document from the preview's export menu, and Marp presentations export as one slide per page from the slide toolbar. Layout and positioning were tuned for clean output (see [Export](/guides/export/) and [Marp Presentations](/guides/marp/#pdf-export))
+- **Custom themes** — Create your own themes: duplicate any built-in theme, adjust its colors in the new theme editor, and your custom themes are saved for reuse (see [Themes](/guides/themes/#custom-themes))
+- **Drag & drop image insertion** — Drop an image file onto the editor to insert it at that spot, with a "Drop image here" overlay while you drag. Pasting a screenshot works too — the image is saved next to your document and linked with a relative path (see [Editor & Preview](/guides/editor-and-preview/#inserting-images-by-drag--drop-or-paste))
+- **Continuous list & checkbox input** — Pressing Enter inside a list or checkbox automatically starts the next item, so you can keep typing without retyping the marker (see [Editor & Preview](/guides/editor-and-preview/#continuous-list-input))
+
+### Improvements
+- Marp slide fonts are now bundled with the app, so slides render with the correct fonts even without an internet connection
+- Dependency updates (Tauri, Mermaid, and others)
+
+### Bug Fixes
+- Fixed a PDF export bug affecting Marp slide rendering
+
+---
+
 ## v0.9.4 — June 29, 2026
 
 ### New Features
