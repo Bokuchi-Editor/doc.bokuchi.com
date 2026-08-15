@@ -77,6 +77,20 @@ Result:
 | Bob | 25 | Osaka |
 ```
 
+Fields wrapped in double quotes are handled correctly, too. A quoted field can contain commas, quotes, or even line breaks, and it still becomes a single table cell:
+
+```
+Name,Comment
+Alice,"Says ""hello"", then leaves"
+```
+
+Result:
+```markdown
+| Name | Comment |
+| --- | --- |
+| Alice | Says "hello", then leaves |
+```
+
 ### TSV Data
 
 When you copy from Excel or Google Sheets, data is pasted in tab-separated (TSV) format. TSV data is also converted to Markdown tables.

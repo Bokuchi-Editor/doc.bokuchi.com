@@ -3,6 +3,20 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v1.1.0 — August 11, 2026
+
+### New Features
+- **Choose your editor and preview fonts** — Settings > Editor now has two font pickers that list the fonts installed on your machine, with each option shown in its own font. Typing a name narrows the list, and the editor picker can filter to monospace fonts. The preview font also applies to HTML and PDF exports, while code blocks always keep a monospace font. Pick **Default** to return to the standard fonts (see [Settings](/guides/settings/#choosing-fonts))
+
+### Improvements
+- Dependency updates (Mermaid, DOMPurify, and others)
+
+### Bug Fixes
+- Fixed text containing `$` — such as `$(...)` — inside code blocks being misrendered as a math formula when the document contains unmatched ``` fences
+- Fixed pasting CSV/TSV data with quoted fields — fields containing commas, quotes, or line breaks now become a single table cell instead of breaking the table (see [Table Conversion](/guides/table-conversion/#csv-data))
+
+---
+
 ## v1.0.1 — July 31, 2026
 
 ### New Features
