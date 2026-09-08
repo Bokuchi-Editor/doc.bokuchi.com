@@ -109,6 +109,44 @@ Use `>` at the beginning of a line to create a quote:
 
 **When to use:** Highlight important information, quote sources, or add notes.
 
+### Alerts (Callouts)
+
+Start a blockquote with a special marker and it becomes a colored callout box with an icon — the same syntax GitHub uses:
+
+```markdown
+> [!NOTE]
+> Useful information that readers should know, even when skimming.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information readers need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+```
+
+| Marker | Color | Use case |
+|--------|-------|----------|
+| `[!NOTE]` | Blue | General information |
+| `[!TIP]` | Green | Helpful hints |
+| `[!IMPORTANT]` | Purple | Things the reader must not miss |
+| `[!WARNING]` | Yellow | Potential problems |
+| `[!CAUTION]` | Red | Dangerous or irreversible actions |
+
+A few rules, matching GitHub's behavior:
+
+- The marker must be on its own line, as the first line of the quote. `> [!NOTE] extra text` stays a plain quote
+- The alert needs at least one line of body text after the marker
+- The marker is not case-sensitive — `[!note]` works too
+- Only top-level quotes become alerts. A quote nested inside a list or inside another quote stays plain
+
+Alerts also appear in [HTML and PDF exports](/guides/export/). The titles (Note, Tip, and so on) are always shown in English, just like on GitHub.
+
 ## Code
 
 ### Inline Code
@@ -151,6 +189,24 @@ Create a divider line with three or more dashes:
 ```markdown
 ---
 ```
+
+## Emoji Shortcodes
+
+Type an emoji name between colons and the preview shows the emoji:
+
+```markdown
+Launch day! :rocket: :tada:
+```
+
+Result: Launch day! 🚀 🎉
+
+Bokuchi understands the same shortcodes as GitHub, so any name that works in a GitHub comment works here. Shortcodes are converted in the preview and in [HTML and PDF exports](/guides/export/); the text in your file stays as you typed it.
+
+- Names are lowercase — `:ROCKET:` stays as text
+- Unknown names are shown as-is
+- Shortcodes inside inline code or code blocks are never converted
+
+If you'd rather keep shortcodes as plain text, turn off **Emoji Shortcodes** in [Settings](/guides/settings/) > Advanced > Rendering Extensions.
 
 ## Math Expressions (KaTeX)
 

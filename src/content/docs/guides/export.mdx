@@ -18,6 +18,7 @@ The exported HTML file includes:
 - **Image references** — Images are kept as relative paths. Place image files in the same folder structure alongside the exported HTML
 - **Expanded variables** — All [variables](/guides/variables/) are replaced with their actual values
 - **Math and diagrams** — KaTeX math expressions and Mermaid diagrams are rendered in the exported file
+- **Alerts and emoji** — [GitHub-style alerts](/guides/markdown-basics/#alerts-callouts) keep their icons and colors, and [emoji shortcodes](/guides/markdown-basics/#emoji-shortcodes) are converted
 - **Your preview font** — If you've chosen a [preview font](/guides/settings/#choosing-fonts) in Settings, the exported file uses it too. Code blocks always keep a monospace font
 
 ## How to Export
@@ -41,10 +42,16 @@ The exported HTML file can be opened in any web browser without Bokuchi. If your
 
 Choosing **Export as PDF** saves your document as an A4 PDF — handy for printing or sharing with people who don't use Bokuchi.
 
-The PDF includes the same content as the HTML export: syntax-highlighted code blocks, expanded variables, KaTeX math, Mermaid diagrams, and your chosen [preview font](/guides/settings/#choosing-fonts).
+The PDF includes the same content as the HTML export: syntax-highlighted code blocks, expanded variables, KaTeX math, Mermaid diagrams, alerts, emoji, and your chosen [preview font](/guides/settings/#choosing-fonts).
+
+While the file is being produced, a **Generating PDF…** message appears at the bottom of the window. Large documents with many images can take a few seconds. When it finishes, a **PDF exported** confirmation appears — or an error message if something went wrong.
 
 <Aside>
 PDF output always uses light colors on a white background, regardless of your current theme, so the result stays easy to read and print.
+</Aside>
+
+<Aside>
+Images are recompressed as they are written into the PDF, so image-heavy documents produce much smaller files than you might expect — with no loss of resolution, and transparency preserved.
 </Aside>
 
 Marp presentations have their own PDF export that saves one slide per page — see [Marp Presentations](/guides/marp/#pdf-export).

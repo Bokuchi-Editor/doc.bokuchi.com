@@ -3,6 +3,37 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v1.1.2 — September 5, 2026
+
+### Improvements
+- Dependency updates (Mermaid and others)
+
+### Bug Fixes
+- Fixed the preview sometimes showing stale content after switching tabs — it now always re-renders for the tab you switch to (contributed by @tanahiro2010)
+
+---
+
+## v1.1.1 — August 24, 2026
+
+### New Features
+- **GitHub-style alerts** — Blockquotes that start with `> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`, `> [!WARNING]`, or `> [!CAUTION]` now render as colored callout boxes with an icon, in the preview and in HTML/PDF exports — just like on GitHub (see [Markdown Basics](/guides/markdown-basics/#alerts-callouts))
+- **Emoji shortcodes** — Type `:rocket:` and the preview shows 🚀. GitHub's full list of shortcodes is supported, and shortcodes inside code are left alone. Turn it off under Settings > Advanced > Rendering Extensions if you prefer (see [Markdown Basics](/guides/markdown-basics/#emoji-shortcodes))
+- **Reveal in Finder / File Explorer** — Right-click a tab or a file in the folder tree to open the OS file manager with that file selected (see [Tabs](/guides/tabs/#context-menu) and [Folder Tree](/guides/folder-tree/#revealing-a-file-in-the-file-manager))
+- **PDF export progress** — A "Generating PDF…" message appears while the file is being produced, followed by a confirmation when it's done (see [Export](/guides/export/#pdf-export))
+
+### Improvements
+- PDF exports of image-heavy documents are dramatically smaller — a sample Marp deck went from 23 MB to about 3 MB, with no loss of resolution
+- Dependency updates (highlight.js and others)
+
+### Bug Fixes
+- Fixed pasting a single line of ordinary text containing a comma (such as `hello, world`) turning into an empty table when table conversion is set to Auto. A copied spreadsheet row still converts
+- Fixed the outline panel showing fake headings from inside code blocks when a code fence contains a `~~~` line
+- Fixed editing a table cell from the preview changing the line endings of a Windows-style (CRLF) file
+- Renaming a file to a name starting with a dot (a hidden file) is now rejected, consistent with the existing hidden-file protection
+- Fixed task-list checkboxes in the preview sitting slightly above their text and not scaling with the preview font size or zoom
+
+---
+
 ## v1.1.0 — August 11, 2026
 
 ### New Features
