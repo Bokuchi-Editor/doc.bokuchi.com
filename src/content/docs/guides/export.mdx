@@ -20,6 +20,8 @@ The exported HTML file includes:
 - **Math and diagrams** — KaTeX math expressions and Mermaid diagrams are rendered in the exported file
 - **Alerts and emoji** — [GitHub-style alerts](/guides/markdown-basics/#alerts-callouts) keep their icons and colors, and [emoji shortcodes](/guides/markdown-basics/#emoji-shortcodes) are converted
 - **Your preview font** — If you've chosen a [preview font](/guides/settings/#choosing-fonts) in Settings, the exported file uses it too. Code blocks always keep a monospace font
+- **Text direction** — The [text direction](/guides/settings/#preview-text-direction) you chose (Auto, Left to Right, or Right to Left) is written into the file, so a right-to-left document stays right-to-left in the browser. Code blocks stay left-to-right
+- **Code block file names** — A [file name label](/guides/markdown-basics/#file-names-on-code-blocks) written as ` ```ts:src/index.ts ` appears on the code block in the exported file too
 
 ## How to Export
 
@@ -42,12 +44,12 @@ The exported HTML file can be opened in any web browser without Bokuchi. If your
 
 Choosing **Export as PDF** saves your document as an A4 PDF — handy for printing or sharing with people who don't use Bokuchi.
 
-The PDF includes the same content as the HTML export: syntax-highlighted code blocks, expanded variables, KaTeX math, Mermaid diagrams, alerts, emoji, and your chosen [preview font](/guides/settings/#choosing-fonts).
+The PDF includes the same content as the HTML export: syntax-highlighted code blocks with their file name labels, expanded variables, KaTeX math, Mermaid diagrams, alerts, emoji, your chosen [preview font](/guides/settings/#choosing-fonts), and your [text direction](/guides/settings/#preview-text-direction).
 
 While the file is being produced, a **Generating PDF…** message appears at the bottom of the window. Large documents with many images can take a few seconds. When it finishes, a **PDF exported** confirmation appears — or an error message if something went wrong.
 
 <Aside>
-PDF output always uses light colors on a white background, regardless of your current theme, so the result stays easy to read and print.
+PDF output always uses light colors on a white background, regardless of your current theme, so the result stays easy to read and print. Table headers always get a neutral gray tint in the PDF, even in themes where the preview shows a colored header.
 </Aside>
 
 <Aside>

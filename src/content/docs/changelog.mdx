@@ -3,6 +3,19 @@ title: Changelog
 description: Version history and release notes for Bokuchi.
 ---
 
+## v1.2.0 — September 18, 2026
+
+### New Features
+- **Right-to-left preview** — The preview and HTML/PDF exports can now lay out Arabic and other right-to-left scripts correctly. Pick **Auto**, **Left to Right**, or **Right to Left** from the new text direction button in the preview header, or under Settings > Editor. Auto detects the direction from your content, and when the UI language is Arabic the preview defaults to right-to-left. Code blocks always stay left-to-right, while tables follow the document direction (see [Editor & Preview](/guides/editor-and-preview/#text-direction) and [Settings](/guides/settings/#preview-text-direction))
+- **File names on code blocks** — Write ` ```ts:src/index.ts ` and the code block shows `src/index.ts` as a label while still highlighting as TypeScript, in the preview and in HTML/PDF exports. `:README` gives a label without a language (see [Markdown Basics](/guides/markdown-basics/#file-names-on-code-blocks))
+
+### Improvements
+- The editor now follows the selected theme — its background, text, line numbers, cursor, and current-line highlight are derived from the theme's colors, including custom themes. Syntax colors still come from the built-in light or dark scheme (see [Themes](/guides/themes/#editor-colors))
+- Preview table headers in the Default, Pastel, and Vivid themes now use the app bar's color, in the preview and in HTML exports. Other themes use a neutral tint that keeps the header text readable, and PDF exports always use the neutral tint
+- Dependency updates (React, Tauri, DOMPurify, and others)
+
+---
+
 ## v1.1.2 — September 5, 2026
 
 ### Improvements

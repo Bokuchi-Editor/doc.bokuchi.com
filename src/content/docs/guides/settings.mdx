@@ -18,6 +18,7 @@ Open the settings panel with **Cmd+,** (macOS) or **Ctrl+,** (Windows/Linux). Yo
 | Font size | Editor text size | 14 |
 | Editor font | Font used in the editor, chosen from the fonts installed on your machine | Default |
 | Preview font | Font used for the preview text and for HTML/PDF exports | Default |
+| Preview text direction | Text direction for the preview and HTML/PDF exports: Auto, Left to Right, or Right to Left | Auto |
 | Line numbers | Show line numbers in the gutter | On |
 | Tab size | Number of spaces per tab | 2 |
 | Word wrap | Wrap long lines to fit the editor width | On |
@@ -34,6 +35,20 @@ Both font pickers list the fonts installed on your machine, and each option is s
 - **Preview font** — The font used for the preview text. It also applies to [HTML and PDF exports](/guides/export/), so exported documents look the same as the preview. Code blocks always keep a monospace font, whichever preview font you choose
 
 Pick **Default** in either picker to return to the standard fonts.
+
+#### Preview Text Direction
+
+Writing in Arabic, Hebrew, or another right-to-left script? **Preview text direction** controls how the preview and [HTML and PDF exports](/guides/export/) lay out your text:
+
+- **Auto** — Bokuchi detects the direction from the content. Left-to-right documents look exactly as before, and a document that starts in a right-to-left script is laid out right-to-left
+- **Left to Right** — Always lay out the text left-to-right
+- **Right to Left** — Always lay out the text right-to-left
+
+The same choice is available from the **text direction button** in the preview panel header, so you can switch without opening Settings. Code blocks always stay left-to-right for readability, while tables follow the document direction.
+
+<Aside>
+When the UI language is set to Arabic, the preview defaults to **Right to Left** until you pick a direction yourself. Every other language starts in **Auto**.
+</Aside>
 
 ### Appearance
 

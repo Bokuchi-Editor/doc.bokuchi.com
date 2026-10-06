@@ -80,7 +80,7 @@ Not quite happy with any of the built-in colors? You can create your own theme b
 3. Choose a base theme — your custom theme starts as a copy of it
 4. Adjust the colors in the editor that opens
 
-You can change 7 colors: the window background, panel background, text, secondary text, two accent colors, and the divider color. Each color has a color picker and a hex field (like `#1a2b3c`), and your changes are applied to the whole app immediately so you can see the result as you go.
+You can change 7 colors: the window background, panel background, text, secondary text, two accent colors, and the divider color. Each color has a color picker and a hex field (like `#1a2b3c`), and your changes are applied to the whole app — [editor included](#editor-colors) — immediately so you can see the result as you go.
 
 While editing you can also:
 
@@ -92,6 +92,16 @@ If a text color and its background are too similar, Bokuchi shows a warning so y
 
 <Aside>
 Custom themes are saved with your settings and work just like the built-in ones — you can apply them from the theme cards or cycle to them from the status bar.
+</Aside>
+
+## Editor Colors
+
+Themes don't stop at the window chrome — the editor pane follows the theme too. Its background, text, line numbers, cursor, current-line highlight, and pop-up widgets are derived from the theme's colors, so the editor blends in with the rest of the app. This applies to [custom themes](#custom-themes) as well: change the window background or text color and the editor updates immediately.
+
+Syntax highlighting colors in the editor (headings, links, code, and so on in the Markdown source) still come from a built-in light or dark scheme, chosen to match whether the theme is light or dark.
+
+<Aside>
+In the Default, Pastel, and Vivid themes, table headers in the preview and in exported HTML take the app bar's color. Other themes — including custom themes — use a neutral tint that always keeps the header text readable. PDF exports always use the neutral tint.
 </Aside>
 
 ## Theme Persistence

@@ -167,6 +167,18 @@ function hello() {
 
 Bokuchi supports syntax highlighting for over 190 programming languages.
 
+#### File Names on Code Blocks
+
+Add a colon and a file name after the language, and the code block shows the file name as a label in its top-left corner — handy when a document walks through several files:
+
+````markdown
+```ts:src/index.ts
+export const greeting = "Hello";
+```
+````
+
+The part before the colon (`ts` here) is still used for syntax highlighting, and the part after it becomes the label. To show a label without any highlighting, leave the language out: ` ```:README `. The label also appears in [HTML and PDF exports](/guides/export/). This is the same `language:filename` syntax used on Qiita. Marp slides don't show the label.
+
 ## Tables
 
 Use pipes `|` and dashes `-` to create tables:

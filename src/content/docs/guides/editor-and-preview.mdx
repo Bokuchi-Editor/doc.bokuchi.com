@@ -46,7 +46,7 @@ Links in the preview are clickable. External links open in your system's default
 
 ### Code Blocks
 
-Code blocks in the preview have syntax highlighting for over 190 programming languages. The language is detected from the label after the opening triple backticks.
+Code blocks in the preview have syntax highlighting for over 190 programming languages. The language is detected from the label after the opening triple backticks. Add a colon and a file name after the language — ` ```ts:src/index.ts ` — and the block shows the file name as a label. See [File Names on Code Blocks](/guides/markdown-basics/#file-names-on-code-blocks).
 
 Hover over a code block and a **copy button** appears in its top-right corner. Click it to copy the whole snippet to the clipboard — a check mark briefly confirms the copy. The button lives only in the preview; it never appears in exported HTML or PDF files.
 
@@ -67,6 +67,12 @@ When enabled in settings, ` ```mermaid ` fenced code blocks are rendered as diag
 When enabled in settings, Markdown files with a `marp: true` front-matter are rendered as slide presentations in the preview. In split view, slides scroll in sync with the editor. In preview-only mode, slides are shown one at a time with navigation controls.
 
 See [Marp Presentations](/guides/marp/) for details.
+
+### Text Direction
+
+Writing in Arabic or another right-to-left script? Click the **text direction button** in the preview panel header (next to the export button) and choose **Auto**, **Left to Right**, or **Right to Left**. Auto detects the direction from your content, so most people never need to touch it. Code blocks always stay left-to-right, while tables follow the document direction. The choice is remembered and also applies to [HTML and PDF exports](/guides/export/).
+
+See [Settings](/guides/settings/#preview-text-direction) for details, including the default for the Arabic UI language.
 
 ## Editor Features
 
